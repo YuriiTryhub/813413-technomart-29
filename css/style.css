@@ -1,3 +1,4 @@
+/* Variables */
 :root {
    --basic-red: #EE3643;
    --basic-gray:#32425C;
@@ -13,4 +14,26 @@
    --basic-yellow: #FFD180;
    --basic-blue: #3BBCE3;
    --basic-pink: #DC91D8;
+   --basic-white: #FFFFFF;
+}
+
+/* Global */
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Cuprum", sans-serif;
+   font-size: 14px;
+   line-height: 24px;
+   font-weight: 700;
+   color: black; /* Заменить!!!*/
+   background-color: var(--basic-white);
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
 }
