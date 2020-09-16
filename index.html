@@ -12,9 +12,9 @@
   <body class="page-body">
     <header class="main-header">
       <section class="main-header-menu">
-        <a class="main-header-logo" href="#">Техномарт
-          <img src="https://via.placeholder.com/150x100" alt="Логотип интернет-магазина «Техномарт»">
-        </a>
+        <button class="button-logo" type="button">
+          <a class="main-header-logo" href="#">Техномарт</a>
+        </button>
         <!--Форма строки поиска-->
         <ul class="main-header-list">
           <li><a href="#">Закладки</a></li>
@@ -156,50 +156,50 @@
           <ul class="manufacturers-list">
             <li class="manufacturers-item">
               <a href="#">
-                BOSH
-                <img src="https://via.placeholder.com/150x100" alt="BOSH">
+                <h3>BOSH</h3>
+                <img src="img/bosch.png" alt="BOSH">
               </a>
             </li>
             <li class="manufacturers-item">
               <a href="#">
-                Makita
-                <img src="https://via.placeholder.com/150x100" alt="Makita">
+                <h3>Makita</h3>
+                <img src="img/Makita.png" alt="Makita">
               </a>
             </li>
             <li class="manufacturers-item">
               <a href="#">
-                DeWalt
-                <img src="https://via.placeholder.com/150x100" alt="DeWalt">
+                <h3>DeWalt</h3>
+                <img src="img/DeWALT.png" alt="DeWalt">
               </a>
             </li>
             <li class="manufacturers-item">
               <a href="#">
-                Интерскол
-                <img src="https://via.placeholder.com/150x100" alt="Интерскол">
+                <h3>Интерскол</h3>
+                <img src="img/interscol.png" alt="Интерскол">
               </a>
             </li>
             <li class="manufacturers-item">
               <a href="#">
-                HITACHI
-                <img src="https://via.placeholder.com/150x100" alt="Hitachi">
+                <h3>HITACHI</h3>
+                <img src="img/Hitachi.png" alt="Hitachi">
               </a>
             </li>
             <li class="manufacturers-item">
               <a href="#">
-                LG
-                <img src="https://via.placeholder.com/150x100" alt="LG">
+                <h3>LG</h3>
+                <img src="img/LG.png" alt="LG">
               </a>
             </li>
             <li class="manufacturers-item">
               <a href="#">
-                AEG Power Solutions
-                <img src="https://via.placeholder.com/150x100" alt="AEG Power Solutions">
+                <h3>AEG Power Solutions</h3>
+                <img src="img/AEG.png" alt="AEG Power Solutions">
               </a>
             </li>
             <li class="manufacturers-item">
               <a href="#">
-                metabo work. don't play.
-                <img src="https://via.placeholder.com/150x100" alt="metabo work. don't play.">
+                <h3>metabo work. don't play.</h3>
+                <img src="img/Metabo.png" alt="metabo work. don't play.">
               </a>
             </li>
           </ul>
@@ -243,31 +243,36 @@
                 Кредитные консультанты придут вам на помощь.</p>
           </li>
         </ul>
-        <div class="truck"></div>
+        <div class="truck">
+          <img src="img/track.png" alt="Грузовик">
+        </div>
       </section>
 
       <section class="contacts">
         <div class="contacts-info">
           <h2>Компания «Техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для 
+          <div class="contacts-info-description">
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для 
             ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+            <br>
             <br>
             Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:</p>
+          </div>
           <ul class="contacts-company">
             <li><p>Деловые линии</p></li>
             <li><p>Автотрейдинг</p></li>
             <li><p>ЖелДорЭкспидиция</p></li>
           </ul>
-          <a href="#">Подробнее о компании</a>
+          <button class="button-red button-info"><a href="#">Подробнее о компании</a></button>
         </div>
         <div class="contacts-address">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, 
             заехав в наш офис:</p>
             <!--ссылка на карту-->
-          <a href="#"><img src="https://via.placeholder.com/150x100"></a>
-          <button class="button contacts-button" type="button">Заблудились? Напишите нам!</button>
+          <a href="#"><img src="/img/map.png" alt="map"></a>
+          <button class="button button-red contacts-button" type="button">Заблудились? Напишите нам!</button>
         </div>
       </section>
     </main>
