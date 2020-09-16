@@ -12,6 +12,7 @@
    --basic-green: #63A63E;
    --basic-lightgreen: #8ED78F;
    --basic-orange: #FFBF47;
+   --basic-light-orange: #FFC047;
    --basic-yellow: #FFD180;
    --basic-blue: #3BBCE3;
    --basic-pink: #DC91D8;
@@ -29,6 +30,7 @@ body {
    font-weight: 700;
    color: black; /* Заменить!!!*/
    background-color: var(--basic-white);
+   background-repeat: no-repeat;
 }
 
 a {
@@ -110,11 +112,118 @@ h1{
 }
 
 /*main*/
+.catalog-item {
+   width: 300px;
+   height: 123px;
+   background-color: var(--basic-gray-extra-light);
+   border: 7px solid var(--basic-white);
+}
 
+.catalog-item:first-child {
+   background-color: var(--basic-orange);
+}
 
+.catalog-item:nth-child(2){
+   background-color: var(--basic-blue);
+}
 
+.catalog-item:nth-child(3){
+   background-color: var(--basic-pink);
+}
 
+.catalog-item:nth-child(4){
+   background-color: var(--basic-green);
+}
 
+.catalog-item:nth-child(5) {
+   background-color: var(--basic-light-orange);
+}
 
+.catalog-item:last-child{
+   height: 266px;
+   width: 620px;
+   background-image: url(/img/perforator1.jpg);
+}
 
+.catalog-item:last-child h3 {
+   color: var(--basic-white);
+   text-transform: uppercase;
+   font-size: 36px;
+   font-weight: bold;
+   line-height: 36px;
+}
+
+.catalog-item:last-child p{
+   color: var(--basic-white);
+   font-weight: normal;
+   font-style: normal;
+   font-size: 18px;
+   line-height: 24px;
+}
+
+.catalog-item:last-child a,
+.products-header a,
+.manufacturers-header a{
+   font-size: 14px;
+   line-height: 18px;
+   color: var(--basic-white);
+   text-transform: uppercase;
+}
+
+.button-red {
+   background: var(--basic-red);
+   height: 38px;
+   width: 192px;
+}
+
+.products-header,
+.manufacturers-header {
+   background-color: var(--basic-peach);
+}
+
+.products-header h2,
+.manufacturers-header h2{
+   font-size: 30px;
+   line-height: 30px;
+   text-transform: uppercase;
+}
+
+.products-cards .products-type{
+   height: 318px;
+   width: 220px;
+}
+
+.button-red-buy {
+   background: var(--basic-red);
+   height: 38px;
+   width: 141px;
+}
+
+.products-type a,
+.products-type s {
+   font-family: "PT Sans";
+}
+
+.products-type .products-price,
+.products-type s {
+   font-size: 17px;
+   line-height: 18px;
+   font-weight: bold;
+}
+
+.products-type .products-price {
+   color: var(--basic-white);
+}
+
+.products-type s{
+   color: var(--basic-gray-extra-light);
+}
+
+.products-type h3{
+   font-size: 18px;
+   line-height: 20px;
+   text-align: center;
+   width: 185px;
+   height: 43px;
+}
 
