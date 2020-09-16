@@ -1,6 +1,7 @@
 /* Variables */
 :root {
    --basic-red: #EE3643;
+   --basic-red-click: #BA2732;
    --basic-gray:#32425C;
    --basic-gray-darker: #293449;
    --basic-gray-lighter: #32425C;
@@ -15,6 +16,7 @@
    --basic-blue: #3BBCE3;
    --basic-pink: #DC91D8;
    --basic-white: #FFFFFF;
+   --basic-black: #000000;
 }
 
 /* Global */
@@ -33,7 +35,86 @@ a {
    text-decoration: none;
 }
 
+li {
+   list-style: none;
+}
+
 img {
    max-width: 100%;
    height: auto;
 }
+
+h1{
+   color: var(--basic-red);
+   font-size: 16px;
+   font-style: italic;
+   line-height: 25px;
+   font-weight: 23px; 
+}
+
+/* Main navigation */
+
+.main-header-menu {
+   background: var(--basic-gray-darker);
+}
+
+.main-header-list {
+   color: var(--basic-white);
+}
+
+.main-header-list a:hover,
+.main-header-list a:visited,
+.main-header-list a:focus,
+.main-header-logo a:hover,
+.main-header-logo a:focus,
+.main-header-logo a:visited {
+   color: var(--basic-white);
+}
+
+/*Header*/
+
+.main-header-info,
+.services {
+   background-color: var(--basic-extra-light);
+}
+
+.phone-call p{
+   color: var(--basic-gray-lighter);
+   font-size: 14px;
+   line-height: 24px;
+}
+
+.phone-call-info {
+   color: var(--basic-red);
+   font-style: 21px;
+   font-weight: bold;
+   line-height: 30px;
+}
+
+.login-link,
+.registration-link {
+   color: var(--basic-black);
+   font-size: 21px;
+   line-height: 21px;
+}
+
+.main-header-submenu {
+   background-color: var(--basic-gray-lighter);
+}
+
+.site-navigation a{
+   color: var(--basic-white);
+   font-size: 18px;
+   line-height: 24px;
+   font-weight: normal;
+}
+
+/*main*/
+
+
+
+
+
+
+
+
