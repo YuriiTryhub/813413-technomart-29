@@ -28,7 +28,7 @@ body {
    font-size: 14px;
    line-height: 24px;
    font-weight: 700;
-   color: black; /* Заменить!!!*/
+   color: var(--basic-black);
    background-color: var(--basic-white);
    background-repeat: no-repeat;
 }
@@ -132,6 +132,12 @@ h1{
    border: 7px solid var(--basic-white);
 }
 
+.catalog-item h3{
+   color: var(--basic-white);
+   font-size: 24px;
+   line-height: 30px;
+}
+
 .catalog-item:first-child {
    background-color: var(--basic-orange);
 }
@@ -173,6 +179,17 @@ h1{
    font-size: 18px;
    line-height: 24px;
 }
+
+.button-catalog-item {
+   width: 135px;
+   height: 38px;
+}
+
+.button-catalog-item a{
+   text-transform: uppercase;
+   color: var(--basic-white);
+}
+
 
 /* Стили текста красных кнопок*/
 .catalog-item:last-child a,
