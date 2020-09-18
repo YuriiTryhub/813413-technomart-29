@@ -266,7 +266,15 @@ h1{
    height: 43px;
 }
 
-/* скрыть текст*/
+/* изображение грузовика*/
+.truck{
+   width: 468px;
+   height: 261px;
+   background-image: url("../img/truck.png");
+}
+
+
+/* скрытый текст*/
 
 .manufacturers-list h3{
    text-indent: 100%;
@@ -319,7 +327,7 @@ h1{
    height: 38px;
 }
 
-/*Выстроить тире по центру*/
+/*Выстроить тире по центру (???)*/
 .contacts-company li{
    list-style-image: url(../img/liststyle.png);
 }
