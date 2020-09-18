@@ -125,6 +125,8 @@ h1{
 }
 
 /*main*/
+
+/* Каталог*/
 .catalog-item {
    width: 300px;
    height: 123px;
@@ -180,14 +182,14 @@ h1{
    line-height: 24px;
 }
 
-.button-catalog-item {
-   width: 135px;
-   height: 38px;
-}
+/* Кнопки каталога*/
 
-.button-catalog-item a{
-   text-transform: uppercase;
+.button-catalog-item {
    color: var(--basic-white);
+   padding: 15px 30px;
+   text-decoration: none;
+   text-transform: uppercase;
+   border: 1px solid black;
 }
 
 
