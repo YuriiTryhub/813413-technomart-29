@@ -1,6 +1,7 @@
 /* Variables */
 :root {
    --basic-red: #EE3643;
+   --basic-red-hover: #CA2C37;
    --basic-red-click: #BA2732;
    --basic-gray:#32425C;
    --basic-gray-darker: #293449;
@@ -324,6 +325,14 @@ h1{
    height: 38px;
    width: 192px;
    border: 0;
+}
+
+.button-red:hover{
+   background-color: var(--basic-red-hover);
+}
+
+.button-red:active{
+   background-color: var(--basic-red-click);
 }
 
 .products-header,
