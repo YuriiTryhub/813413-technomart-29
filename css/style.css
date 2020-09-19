@@ -6,6 +6,8 @@
    --basic-gray-darker: #293449;
    --basic-gray-lighter: #32425C;
    --basic-gray-extra-light: #A9A9A9;
+   --basic-gray-hover: rgb(197,197,197,0.3);
+   --basic-gray-active: rgb(169,169,169,0.3);
    --basic-peach: #F7F3EC;
    --basic-light: #F9F5F0;
    --basic-extra-light: #F1F5F7;
@@ -18,7 +20,9 @@
    --basic-blue: #3BBCE3;
    --basic-pink: #DC91D8;
    --basic-white: #FFFFFF;
-   --basic-white-opacity: rgb(255,255,255,0.5);
+   --basic-white-opacity: rgb(255,255,255,0.3);
+   --basic-white-opacity-half: rgb(255,255,255,0.5);
+   --basic-white-active: #C5C5C5;
    --basic-black: #000000;
    --basic-black-active: #161D29;
 }
@@ -116,6 +120,34 @@ h1{
    line-height: 21px;
 }
 
+
+.user-menu-list a:hover{
+   color: var(--basic-red);
+}
+
+.user-menu-list a:active{
+   color: var(--basic-white-active);
+}
+
+
+.login-link{
+   background: url(/img/icons/icon-login.svg) no-repeat;
+   padding-left: 26px;
+}
+
+.user-menu-list li{
+   background-color: var(--basic-white);
+   padding: 10px 00px;
+   text-decoration: none;
+   border: 1px solid var(--basic-black);                      /* Для видимости */
+   width: 121px;
+   text-align: center;
+}
+
+.user-menu-list a{
+}
+
+
 .main-header-submenu {
    background-color: var(--basic-gray-lighter);
 }
@@ -181,6 +213,9 @@ h1{
    color: var(--basic-white-opacity);
 }
 
+
+
+
 /*main*/
 
 /* Каталог*/
@@ -239,16 +274,38 @@ h1{
    line-height: 24px;
 }
 
-/* Кнопки каталога*/
+/* Кнопки первой секции каталога*/
 
 .button-catalog-item {
    color: var(--basic-white);
    padding: 15px 30px;
    text-decoration: none;
    text-transform: uppercase;
-   border: 1px solid var(--basic-black);
 }
 
+.button-yellow,
+.button-blue,
+.button-pink,
+.button-green,
+.button-orange{
+   background-color: var(--basic-white-opacity-half);
+}
+
+.button-yellow:hover,
+.button-blue:hover,
+.button-pink:hover,
+.button-green:hover,
+.button-orange:hover{
+   background-color: var(--basic-gray-hover);
+}
+
+.button-yellow:active,
+.button-blue:active,
+.button-pink:active,
+.button-green:active,
+.button-orange:active {
+   background-color: var(--basic-gray-active);
+}
 
 /* Стили текста красных кнопок*/
 .catalog-item:last-child a,
