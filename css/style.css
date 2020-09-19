@@ -9,6 +9,7 @@
    --basic-gray-extra-light: #A9A9A9;
    --basic-gray-hover: rgb(197,197,197,0.3);
    --basic-gray-active: rgb(169,169,169,0.3);
+   --basic-gray-border: #EAEAEA;
    --basic-peach: #F7F3EC;
    --basic-light: #F9F5F0;
    --basic-extra-light: #F1F5F7;
@@ -23,6 +24,7 @@
    --basic-white: #FFFFFF;
    --basic-white-opacity: rgb(255,255,255,0.3);
    --basic-white-opacity-half: rgb(255,255,255,0.5);
+   --basic-white-opacity-half2: rgb(241,245,247,0.5);
    --basic-white-active: #C5C5C5;
    --basic-black: #000000;
    --basic-black-active: #161D29;
@@ -107,11 +109,19 @@ h1{
    line-height: 24px;
 }
 
+.phone-call-border{
+   border: 3px solid var(--basic-white);
+   width: 270px;
+   text-decoration: none;
+   text-align: center;
+}
+
 .phone-call-info {
    color: var(--basic-red);
    font-style: 21px;
    font-weight: bold;
    line-height: 30px;
+   text-align: center;
 }
 
 .login-link,
@@ -138,16 +148,12 @@ h1{
 
 .user-menu-list li{
    background-color: var(--basic-white);
-   padding: 10px 00px;
+   padding: 10px;
    text-decoration: none;
-   border: 1px solid var(--basic-black);                      /* Для видимости */
+   border: 1px solid var(--basic-black);           /* Для видимости */
    width: 121px;
    text-align: center;
 }
-
-.user-menu-list a{
-}
-
 
 .main-header-submenu {
    background-color: var(--basic-gray-lighter);
@@ -214,12 +220,9 @@ h1{
    color: var(--basic-white-opacity);
 }
 
-
-
-
 /*main*/
 
-/* Каталог*/
+/* Каталог основные стили карточек */
 .catalog-item {
    width: 300px;
    height: 123px;
@@ -236,6 +239,84 @@ h1{
 .catalog-item:first-child {
    background-color: var(--basic-orange);
 }
+
+.catalog-item{
+   position: relative;
+}
+
+.materials-icon,
+.instrument-icon,
+.technic-icon,
+.discount-icon,
+.delivery-icon {
+   position: absolute;
+}
+
+.materials-icon{
+   width:45px;
+   height: 65px;
+   background: url(/img/materials.svg) no-repeat;
+   left: 213px;
+   top: 27px;
+}
+
+/* Флажок нового товара */
+
+.new-item{
+   position: absolute;
+   background: url(/img/new.svg) no-repeat;
+   width: 70px;
+   height: 70px;
+   left: 230px;
+   top: 0;
+}
+
+.instrument-icon {
+   width:75px;
+   height: 61px;
+   background: url(/img/instruments.svg) no-repeat;
+   left: 194px;
+   top: 28px;
+}
+
+.technic-icon {
+   width:78px;
+   height: 62px;
+   background: url(/img/tractor.svg) no-repeat;
+   left: 194px;
+   top: 30px;
+}
+
+.discount-icon {
+   width:59px;
+   height: 72px;
+   background: url(/img/basket.svg) no-repeat;
+   left: 196px;
+   top: 25px;
+}
+
+.delivery-icon {
+   width: 78px;
+   height: 63px;
+   background: url(/img/delivery.svg) no-repeat;
+   left: 191px;
+   top: 38px;
+}
+
+.products-type {
+   position: relative;
+   
+}
+
+.new-catalog-item{
+   position: absolute;
+   background: url(/img/new.svg) no-repeat;
+   width: 70px;
+   height: 70px;
+   left: 150px;
+   top: 0;
+}
+
 
 .catalog-item:nth-child(2){
    background-color: var(--basic-blue);
@@ -320,6 +401,7 @@ h1{
    text-transform: uppercase;
 }
 
+/* Стилизация красных кнопок */
 .button-red {
    background: var(--basic-red);
    height: 38px;
@@ -356,6 +438,11 @@ h1{
    width: 220px;
 }
 
+.products-type {
+   border: 1px solid var(--basic-gray-border);
+   text-align: center;
+}
+
 .button-red-buy {
    background: var(--basic-red);
    height: 38px;
@@ -386,9 +473,9 @@ h1{
 .products-type h3{
    font-size: 18px;
    line-height: 20px;
-   text-align: center;
    width: 185px;
    height: 43px;
+   margin: auto;
 }
 
 /* изображение грузовика*/
@@ -406,6 +493,16 @@ h1{
    white-space: nowrap;
    overflow: hidden;
 }
+
+/* Карточки производителей */
+
+.manufacturers-item{
+   border: 1px solid var(--basic-gray-border);
+   width: 220px;
+   height: 145px;
+   text-align: center;
+}
+
 
 .services p,
 .contacts-info p,
@@ -425,6 +522,15 @@ h1{
    font-weight: bold;
    line-height: 30px;
 }
+
+.button.services-button:hover{
+   background-color: var(--basic-gray-darker);
+}
+
+.button.services-button:active{
+   background-color: var(--basic-white);
+}
+
 
 .services-list li:first-child button{
    color: var(--basic-gray-lighter);
@@ -511,6 +617,17 @@ h1{
    color: var(--basic-yellow);
 }
 
+.footer-white-link:hover,
+.footer-yellow-link:hover {
+   text-decoration: underline;
+}
+
+.footer-white-link:active,
+.footer-yellow-link:active {
+   color: var(--basic-white-opacity-half2)
+}
+
+
 .deep-footer {
    background-color: var(--basic-gray-darker);
 }
@@ -531,4 +648,23 @@ h1{
 .footer-feedback a,
 .footer-copyright a {
    color: var(--basic-yellow);
+}
+
+.vk-icon,
+.fb-icon,
+.insta-icon {
+   width: 44px;
+   height: 44px;
+}
+
+.vk-icon{
+   background: url(/img/icons/icon-vk.svg) no-repeat;
+}
+
+.fb-icon{
+   background: url(/img/icons/icon-fb.svg) no-repeat;
+}
+
+.insta-icon{
+   background: url(/img/icons/icon-insta.svg) no-repeat;
 }
