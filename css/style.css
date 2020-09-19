@@ -10,6 +10,7 @@
    --basic-light: #F9F5F0;
    --basic-extra-light: #F1F5F7;
    --basic-green: #63A63E;
+   --basic-green-active: #5FBB2D;
    --basic-lightgreen: #8ED78F;
    --basic-orange: #FFBF47;
    --basic-light-orange: #FFC047;
@@ -17,7 +18,9 @@
    --basic-blue: #3BBCE3;
    --basic-pink: #DC91D8;
    --basic-white: #FFFFFF;
+   --basic-white-opacity: rgb(255,255,255,0.5);
    --basic-black: #000000;
+   --basic-black-active: #161D29;
 }
 
 /* Global */
@@ -117,11 +120,65 @@ h1{
    background-color: var(--basic-gray-lighter);
 }
 
+/* Главные кнопки Header */
+
+.button-logo:hover{
+   background-color: var(--basic-red-click);
+}
+
+
+.main-header-list li:first-child{
+   background: url(/img/icons/icon-bookmark.svg) no-repeat 5px;
+   padding-left: 25px;
+}
+
+.main-header-list li:first-child:active{
+   background-color: var(--basic-black-active);
+}
+
+
+.main-header-list li:nth-child(2){
+   background: url(/img/icons/icon-cart.svg) no-repeat 4px;
+   padding-left: 25px;
+}
+
+.main-header-list li:nth-child(2):active{
+   background-color: var(--basic-black-active);
+}
+
+.main-header-list li:last-child{
+   background-color: var(--basic-green);
+   width: 150px;
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.main-header-list li:last-child:hover{
+   background-color: var(--basic-green-active);
+}
+
+.main-header-list a:last-child:active{
+   color: var(--basic-white-opacity);
+}
+
+/* Стилизация кнопок субменю-навигации header */
+
 .site-navigation a{
    color: var(--basic-white);
    font-size: 18px;
    line-height: 24px;
    font-weight: normal;
+}
+
+.site-navigation a:hover{
+   background-color: var(--basic-gray-darker);
+}
+
+.site-navigation a:active{
+   color: var(--basic-white-opacity);
 }
 
 /*main*/
@@ -189,7 +246,7 @@ h1{
    padding: 15px 30px;
    text-decoration: none;
    text-transform: uppercase;
-   border: 1px solid black;
+   border: 1px solid var(--basic-black);
 }
 
 
