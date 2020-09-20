@@ -54,7 +54,7 @@ li {
 
 img {
    max-width: 100%;
-   height: auto;
+
 }
 
 h1{
@@ -66,19 +66,6 @@ h1{
 }
 
 /* Main navigation */
-
-.button-logo {
-   background-color: var(--basic-red);
-   width: 220px;
-   height: 47px;
-   border: 0;
-}
-
-.button-logo a{
-   font-size: 21px;
-   text-transform: uppercase;
-   color: var(--basic-white);
-}
 
 .main-header-menu {
    background: var(--basic-gray-darker);
@@ -130,8 +117,8 @@ h1{
    color: var(--basic-black);
    font-size: 21px;
    line-height: 21px;
+   
 }
-
 
 .user-menu-list a:hover{
    color: var(--basic-red);
@@ -141,9 +128,8 @@ h1{
    color: var(--basic-white-active);
 }
 
-
 .login-link{
-   background: url(/img/icons/icon-login.svg) no-repeat;
+   background: url(../img/icon-logout.svg) no-repeat;
    padding-left: 26px;
 }
 
@@ -162,13 +148,9 @@ h1{
 
 /* Главные кнопки Header */
 
-.button-logo:hover{
-   background-color: var(--basic-red-click);
-}
-
 
 .main-header-list li:first-child{
-   background: url(/img/icons/icon-bookmark.svg) no-repeat 5px;
+   background: url(../img/icon-bookmark.svg) no-repeat 5px;
    padding-left: 25px;
 }
 
@@ -178,7 +160,7 @@ h1{
 
 
 .main-header-list li:nth-child(2){
-   background: url(/img/icons/icon-cart.svg) no-repeat 4px;
+   background: url(../img/icon-cart.svg) no-repeat 4px;
    padding-left: 25px;
 }
 
@@ -245,64 +227,7 @@ h1{
    position: relative;
 }
 
-.materials-icon,
-.instrument-icon,
-.technic-icon,
-.discount-icon,
-.delivery-icon {
-   position: absolute;
-}
-
-.materials-icon{
-   width:45px;
-   height: 65px;
-   background: url(/img/materials.svg) no-repeat;
-   left: 213px;
-   top: 27px;
-}
-
 /* Флажок нового товара */
-
-.new-item{
-   position: absolute;
-   background: url(/img/new.svg) no-repeat;
-   width: 70px;
-   height: 70px;
-   left: 230px;
-   top: 0;
-}
-
-.instrument-icon {
-   width:75px;
-   height: 61px;
-   background: url(/img/instruments.svg) no-repeat;
-   left: 194px;
-   top: 28px;
-}
-
-.technic-icon {
-   width:78px;
-   height: 62px;
-   background: url(/img/tractor.svg) no-repeat;
-   left: 194px;
-   top: 30px;
-}
-
-.discount-icon {
-   width:59px;
-   height: 72px;
-   background: url(/img/basket.svg) no-repeat;
-   left: 196px;
-   top: 25px;
-}
-
-.delivery-icon {
-   width: 78px;
-   height: 63px;
-   background: url(/img/delivery.svg) no-repeat;
-   left: 191px;
-   top: 38px;
-}
 
 .products-type {
    position: relative;
@@ -311,7 +236,7 @@ h1{
 
 .new-catalog-item{
    position: absolute;
-   background: url(/img/new.svg) no-repeat;
+   background: url(../img/new.svg) no-repeat;
    width: 70px;
    height: 70px;
    left: 150px;
