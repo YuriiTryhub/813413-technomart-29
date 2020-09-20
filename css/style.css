@@ -168,12 +168,26 @@ h1{
    padding-left: 25px;
 }
 
+.main-header-list li:nth-child(2):hover{
+   color: var(--basic-red-hover);
+}
+
 .main-header-list li:nth-child(2):active{
-   background-color: var(--basic-black-active);
+   background-color: var(--basic-red-click);
 }
 
 .main-header-list li:last-child{
    background-color: var(--basic-green);
+   width: 150px;
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.main-header-list li:nth-child(2){
+   background-color: var(--basic-red);
    width: 150px;
    color: white;
    padding: 10px;
@@ -189,6 +203,7 @@ h1{
 .main-header-list a:last-child:active{
    color: var(--basic-white-opacity);
 }
+
 
 /* Стилизация кнопок субменю-навигации header */
 
@@ -402,6 +417,7 @@ h1{
    width: 185px;
    height: 43px;
    margin: auto;
+   color: var(--basic-black);
 }
 
 /* изображение грузовика*/
@@ -602,3 +618,33 @@ h1{
 }
 
 /* Замена цвета иконок*/
+
+/* Каталог */
+
+.product-button {
+   width: 135px;
+   height: 38px;
+   border-radius: 2px;
+}
+
+.buy-button{
+   background-color: var(--basic-green);
+}
+
+.product-button a{
+   font-size: 14px;
+   line-height: 18px;
+   align-items: center;
+   text-align: center;
+   text-transform: uppercase;
+   color: var(--basic-white);
+}
+
+.bookmark-button{
+   background-color: var(--basic-white);
+   border: 2px solid var(--basic-green);
+}
+
+.bookmark-button a{
+   color: var(--basic-black);
+}
