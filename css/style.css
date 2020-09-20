@@ -91,6 +91,10 @@ h1{
    background-color: var(--basic-extra-light);
 }
 
+.main-logo:hover{
+   opacity: 0.24;
+}
+
 .phone-call p{
    color: var(--basic-gray-lighter);
    font-size: 14px;
@@ -234,15 +238,11 @@ h1{
    
 }
 
-.new-catalog-item{
-   position: absolute;
-   background: url(../img/new.svg) no-repeat;
-   width: 70px;
-   height: 70px;
-   left: 150px;
-   top: 0;
+.materials-icon::before{
+   background-image: url("../img/materials.svg") no-repeat 5px;
+   width: 100;
+   height: 100;
 }
-
 
 .catalog-item:nth-child(2){
    background-color: var(--basic-blue);
