@@ -71,9 +71,6 @@ h1{
    background: var(--basic-gray-darker);
 }
 
-.main-header-list {
-   color: var(--basic-white);
-}
 
 .main-header-list a:hover,
 .main-header-list a:visited,
@@ -162,10 +159,21 @@ h1{
    background-color: var(--basic-black-active);
 }
 
+.main-header-list li:last-child,
+.main-header-list li:nth-child(2){
+   width: 150px;
+   color: white;
+   padding: 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+   text-align: center;
+}
 
 .main-header-list li:nth-child(2){
    background: url(../img/icon-cart.svg) no-repeat 4px;
+   background-color: var(--basic-red);
    padding-left: 25px;
+   padding: 10px;
 }
 
 .main-header-list li:nth-child(2):hover{
@@ -178,23 +186,8 @@ h1{
 
 .main-header-list li:last-child{
    background-color: var(--basic-green);
-   width: 150px;
-   color: white;
-   padding: 10px;
-   text-decoration: none;
-   text-transform: uppercase;
-   text-align: center;
 }
 
-.main-header-list li:nth-child(2){
-   background-color: var(--basic-red);
-   width: 150px;
-   color: white;
-   padding: 10px;
-   text-decoration: none;
-   text-transform: uppercase;
-   text-align: center;
-}
 
 .main-header-list li:last-child:hover{
    background-color: var(--basic-green-active);
