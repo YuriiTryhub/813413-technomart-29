@@ -3,6 +3,7 @@
    --basic-red: #EE3643;
    --basic-red-hover: #CA2C37;
    --basic-red-click: #BA2732;
+   --basic-gray-dark-active: #1D2739;
    --basic-gray:#32425C;
    --basic-gray-darker: #293449;
    --basic-gray-lighter: #32425C;
@@ -58,11 +59,17 @@ img {
 }
 
 h1{
-   color: var(--basic-red);
-   font-size: 15px;
-   font-style: italic;
-   line-height: 25px;
-   font-weight: 23px;
+   color: var(--basic-white);
+   font-size: 24px;
+   line-height: 24px;
+   font-weight: 400;
+   font-style: normal;
+   font-family: "Cuprum","Arial",sans-serif;
+   text-transform: uppercase;
+   text-decoration: none;
+   text-align: left;
+   color: var(--basic-white);
+   margin: 0 0 0px 15px;
 }
 
 .page{
@@ -163,8 +170,25 @@ h1{
 
 /*Header*/
 
+
+.header-logo-icon a{
+   display: inline-block;
+   width: 165px;
+   padding: 11px 0 7px 55px;
+   
+   background-color: var(--basic-red);
+}
+
+.header-logo-icon a:hover{
+   background-color: var(--basic-red-hover);
+}
+
+.header-logo-icon a:active{
+   background-color: var(--basic-red-click);
+}
+
 .main-header-menu {
-   background: var(--basic-gray-darker);
+   background: var(--basic-gray-lighter);
 }
 
 .main-header-info,
@@ -173,8 +197,11 @@ h1{
    height: 278px;
 }
 
-.main-logo:hover{
-   opacity: 0.24;
+.main-header-info h2{
+   color: var(--basic-red);
+   font-size: 15px;
+   font-style: italic;
+   line-height: 25px;
 }
 
 .search-form {
@@ -199,12 +226,15 @@ h1{
    text-align: center;
 }
 
-.phone-call-info {
+.phone-call-info h2{
    color: var(--basic-red);
-   font-style: 21px;
+   font-size: 21px;
+   font-style: normal;
    font-weight: bold;
    line-height: 30px;
    text-align: center;
+   margin: 0;
+
 }
 
 .login-link,
@@ -243,16 +273,10 @@ h1{
    margin-left: 148px;
 }
 
+
+
 /* Главные кнопки Header */
 
-
-.main-header-list li:nth-child(2){
-   background-color: var(--basic-red);
-}
-
-.main-header-list li:first-child:active{
-   background-color: var(--basic-black-active);
-}
 
 .main-header-list li:last-child,
 .main-header-list li:nth-child(2),
@@ -267,13 +291,14 @@ h1{
    text-align: center;
 }
 
-
-.main-header-list li:nth-child(2):hover{
-   color: var(--basic-red-hover);
+.main-header-list li:nth-child(2):hover,
+.main-header-list li:nth-child(3):hover{
+   background-color: var(--basic-gray-darker);
 }
 
+.main-header-list li:nth-child(3):active,
 .main-header-list li:nth-child(2):active{
-   background-color: var(--basic-red-click);
+   background-color: var(--basic-gray-dark-active);
 }
 
 .main-header-list li:last-child{
@@ -301,12 +326,12 @@ h1{
    font-weight: normal;
 }
 
-.site-navigation a:hover{
+.site-navigation li:hover{
    background-color: var(--basic-gray-darker);
 }
 
-.site-navigation a:active{
-   color: var(--basic-white-opacity);
+.site-navigation li:active{
+   background-color: var(--basic-gray-dark-active);
 }
 
 /*main*/
