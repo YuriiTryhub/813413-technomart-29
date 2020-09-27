@@ -453,7 +453,21 @@ h1{
    background-color: var(--basic-peach);
 }
 
+.products-header{
+   width: 940px;
+   height: 89px;
+   margin-left: 149px;
+}
 
+.products-header-button {
+   position: relative;
+   top: 25%;
+   transform: translate(105%, 0);
+}
+
+.products-header h2 {
+   padding-left: 28px;
+}
 
 .products-header h2,
 .manufacturers-header h2,
