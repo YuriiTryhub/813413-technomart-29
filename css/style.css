@@ -184,6 +184,35 @@ h1{
    gap: 20px;
 }
 
+.services-grid{
+   display: grid;
+   grid-template-rows: repeat(2,auto);
+   grid-template-columns: 300px 600px;
+}
+
+.services-logo{
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+.services-item-grid{
+   display: grid;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   grid-template-columns: 300px 600px;
+}
+
+.services-advantages{
+   grid-column-start: 2;
+   grid-column-end: 3;
+}
+
+.contacts-grid{
+   display: grid;
+   grid-template-columns: 60% 40%;
+}
+
+
 /* */
 
 /*Header*/
@@ -213,7 +242,9 @@ h1{
 .services {
    background-color: var(--basic-extra-light);
    height: 278px;
+   position: relative;
 }
+
 
 .main-header-info h2{
    color: var(--basic-red);
@@ -291,10 +322,7 @@ h1{
    margin-left: 148px;
 }
 
-
-
 /* Главные кнопки Header */
-
 
 .main-header-list li:last-child,
 .main-header-list li:nth-child(2),
@@ -577,10 +605,7 @@ h1{
    color: var(--basic-black);
 }
 
-/* изображение грузовика*/
-.services-advantages::after{
-   content: url("../img/truck.png");
-}
+
 
 .manufacturers-list{
    margin-left: 108px;
@@ -604,8 +629,46 @@ h1{
 }
 
 .manufacturers-item img{
-   /* Как разместить их по центру??? */
+   /* Как разместить иконки их по центру??? */
 }
+
+.services {
+   height: 522px;
+   position: relative;
+}
+
+.services-advantages{
+   padding: 0;
+   margin: 0;
+}
+
+.advantages-item{
+   bottom: 10px;
+   position: relative;
+}
+
+.services-list{
+   padding:0;
+}
+
+.services-logo{
+   margin-top: 64px;
+}
+
+.services-logo,
+.services-item-grid{
+   margin-left: 130px;
+}
+
+
+/* изображение грузовика*/
+.services-advantages::after{
+   content: url("../img/truck.png");
+   position: absolute;
+   right: 12%;
+   top: 50%;
+}
+
 
 .services p,
 .contacts-info p,
@@ -650,6 +713,15 @@ h1{
    color: var(--basic-gray-lighter);
 }
 
+.contacts{
+   height: 469px;
+   margin-left: 131px;
+}
+
+.contacts img{
+   margin: 32px 0 25px 0;
+}
+
 .contacts-company li{
    color: var(--basic-black);
    font-size: 18px;
@@ -664,6 +736,10 @@ h1{
 /*Выстроить тире по центру (???)*/
 .contacts-company li{
    list-style-image: url(../img/liststyle.png);
+}
+
+.contacts-company {
+   margin-bottom: 25px;
 }
 
 .contacts-info-description{
