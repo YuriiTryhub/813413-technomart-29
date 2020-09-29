@@ -404,10 +404,14 @@ h1{
 .manufacturers-header{
    display: flex;
    align-items: center;
-   width: 940px;
+   max-width: 940px;
    background-color: var(--basic-peach);
    margin: 0 auto;
    padding: 29px 0 30px;
+}
+
+.manufacturers-type{
+   padding: 20px 0 70px 0;
 }
 
 
@@ -498,18 +502,65 @@ h1{
    color: var(--basic-black);
 }
 
-/* изображение грузовика*/
-.services-advantages::after{
-   content: url("../img/truck.png");
+.services-container{
+   display: grid;
+   grid-template-columns: 240px 70%;
+   max-width: 940px;
+   margin: 0 auto;
+   padding: 0 0 99px 0;
+}
+
+.services-logo h2,
+.services-logo p{
+   margin: 0;
+   padding: 0;
+}
+
+.services-logo{
+   padding-top: 64px 0 0 0;
+}
+
+.services-logo p{
+   padding: 25px 0 0 0;
+}
+
+.services-list{
+   grid-column-start: 1;
+   grid-column-end: 2;
+}
+
+.services-list,
+.services-advantages{
+   margin:0;
+   padding:0 0 0 70px;
+}
+
+.advantages-item h3{
+   margin: 0;
+}
+
+.services-list,
+.advantages-item{
+   padding: 70px 0 0 0;
 }
 
 
-/* скрытый текст*/
+/* изображение грузовика*/
+/*
+.services-advantages::after{
+   content: url("../img/truck.png");
+   display: flex;
+   float: right;
+}
+*/
 
-.manufacturers-list h3{
-   text-indent: 100%;
-   white-space: nowrap;
-   overflow: hidden;
+.manufacturers-list {
+   display: grid;
+   grid-template-columns: repeat(4,220px);
+   gap: 20px;
+   padding: 0;
+   max-width: 940px;
+   margin: 0 auto;
 }
 
 /* Карточки производителей */
@@ -596,7 +647,51 @@ h1{
    height: 38px;
 }
 
+.contacts-container{
+   display: grid;
+   grid-template-columns: 60% 40%;
+   width: 940px;
+   margin: 0 auto;
+   padding: 70px 0;
+}
+
 /* footer */
+
+.first-footer{
+   display: grid;
+   grid-template-columns: 40% 60%;
+   max-width: 940px;
+   margin: 0 auto;
+   padding: 0 0 64px 0;
+}
+
+.footer-white-link,
+.footer-yellow-link {
+   display: flex;
+}
+
+.footer-white-link li:not(:last-child) {
+   padding-right: 60px;
+}
+
+.footer-yellow-link li:not(:first-child){
+   padding-left: 60px;
+}
+
+.footer-yellow-link li{
+   padding-top: 34px;
+}
+
+.footer-navigation{
+   padding-top: 37px;
+}
+
+.footer-navigation-list{
+   margin:0;
+   padding: 0;
+}
+
+
 .page-footer{
    background-color: var(--basic-gray-lighter);
 }
@@ -693,34 +788,24 @@ h1{
    color: var(--basic-red-click)
 }
 
+.deep-footer-container{
+   display: grid;
+   grid-template-columns: repeat(3,auto);
+   width: 940px;
+   margin:0 auto;
+}
+
+.social-container,
+.feedback-container{
+   display: flex;
+}
+
+.feedback-container{
+   justify-content: flex-end;
+}
+
+.footer-copyright{
+   padding-left: 51px;
+}
+
 /* Замена цвета иконок*/
-
-/* Каталог */
-
-.product-button {
-   width: 135px;
-   height: 38px;
-   border-radius: 2px;
-}
-
-.buy-button{
-   background-color: var(--basic-green);
-}
-
-.product-button a{
-   font-size: 14px;
-   line-height: 18px;
-   align-items: center;
-   text-align: center;
-   text-transform: uppercase;
-   color: var(--basic-white);
-}
-
-.bookmark-button{
-   background-color: var(--basic-white);
-   border: 2px solid var(--basic-green);
-}
-
-.bookmark-button a{
-   color: var(--basic-black);
-}

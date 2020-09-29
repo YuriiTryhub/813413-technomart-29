@@ -162,52 +162,44 @@
               <button class="button-red manufacturers-button" type="button"><a href="#">Все производители</a></button>
             </div>
           <div class="manufacturers-type">
-            <ul class="manufacturers-list manufacturers-list-grid">
+            <ul class="manufacturers-list">
               <li class="manufacturers-item">
                 <a href="#">
-                  
                   <img src="img/bosch.png" alt="BOSH">
                 </a>
               </li>
               <li class="manufacturers-item">
                 <a href="#">
-                  
                   <img src="img/makita.png" alt="Makita">
                 </a>
               </li>
               <li class="manufacturers-item">
                 <a href="#">
-                  
                   <img src="img/dewalt.png" alt="DeWalt">
                 </a>
               </li>
               <li class="manufacturers-item">
                 <a href="#">
-                  
                   <img src="img/interscol.png" alt="Интерскол">
                 </a>
               </li>
               <li class="manufacturers-item">
                 <a href="#">
-                  
                   <img src="img/hitachi.png" alt="Hitachi">
                 </a>
               </li>
               <li class="manufacturers-item">
                 <a href="#">
-                
                   <img src="img/lg.png" alt="LG">
                 </a>
               </li>
               <li class="manufacturers-item">
                 <a href="#">
-                  
                   <img src="img/aeg.png" alt="AEG Power Solutions">
                 </a>
               </li>
               <li class="manufacturers-item">
                 <a href="#">
-                  
                   <img src="img/metabo.png" alt="metabo work. don't play.">
                 </a>
               </li>
@@ -216,11 +208,12 @@
         </section>
 
         <section class="services">
-          <div class="services-logo">
-            <h2>Сервисы</h2>
-            <p>Хороший интернет магазин отличается от плохого не только ценами!
-              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          </div>
+          <div class="services-container">
+            <div class="services-logo">
+              <h2>Сервисы</h2>
+              <p>Хороший интернет магазин отличается от плохого не только ценами!
+                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            </div>
             <ul class="services-list">
               <li class="services-item">
                 <button class="button services-button" type="button">Доставка</button>
@@ -240,6 +233,7 @@
                     Ведь мы неплохо заработаем, <br>
                     поднимая его на ваш этаж!</p>
               </li>
+            </ul>
               <!--
               <li class="advantages-item">
                 <h3>Гарантии</h3>
@@ -256,10 +250,11 @@
               </li>
             </ul>
             -->
+          </div>
         </section>
 
-        <section class="contacts contacts-grid">
-          <div class="contacts-info-grid">
+        <section class="contacts">
+          <div class="contacts-container">
             <div class="contacts-info">
               <h2>Компания «Техномарт»</h2>
               <div class="contacts-info-description">
@@ -277,26 +272,24 @@
               </ul>
               <button class="button-red button-info"><a href="#">Подробнее о компании</a></button>
             </div>
+          
+
+          <div class="contacts-address">
+            <h2>Контакты</h2>
+            <p>Вы можете забрать товар сами,<br> 
+              заехав в наш офис:</p>
+              <!--ссылка на карту-->
+            <a href="#"><img src="img/map.png" alt="map"></a>
+            <button class="button button-red contacts-button" type="button">Заблудились? Напишите нам!</button>
           </div>
-          <div class="contacts-address-grid">  
-            <div class="contacts-address">
-              <h2>Контакты</h2>
-              <p>Вы можете забрать товар сами,<br> 
-                заехав в наш офис:</p>
-                <!--ссылка на карту-->
-              <a href="#"><img src="img/map.png" alt="map"></a>
-              <button class="button button-red contacts-button" type="button">Заблудились? Напишите нам!</button>
-            </div>
-          </div>
+        </div>
         </section>
       </main>
 
       <footer class="page-footer main-footer">
-        <div class="first-footer first-footer-grid">
-
+        <div class="first-footer">
           <section class="footer-contacts">
             <a href="index.html"><img class="main-logo" src="img/mainlogo.svg" whidth="220" height="68" alt="Техномарт"></a>
-            
             <div class="address-block">
               <p class="footer-address"> 
                 г. Санкт-Петербург, Б. Конюшенная, д. 19/8
@@ -304,27 +297,26 @@
               </p>
             </div>
           </section>
-
-          <section class="footer-navigation">
-            <ul class="footer-navigation-list footer-navigation-list-grid">
-              <div class="footer-white-link-grid">
+          <div class="footer-navigation">
+            <ul class="footer-navigation-list">
+              <div class="footer-white-link">
                 <li><a class="footer-white-link" href="#">Компания</a></li>
                 <li><a class="footer-white-link" href="#">Новости</a></li>
                 <li><a class="footer-white-link" href="#">Каталог</a></li>
                 <li><a class="footer-white-link" href="#">Доставка</a></li>
                 <li><a class="footer-white-link" href="#">Контакты</a></li>
               </div>
-              <div class="footer-yellow-link-grid">
+              <div class="footer-yellow-link">
                 <li><a class="footer-yellow-link" href="#">Материалы</a></li>
                 <li><a class="footer-yellow-link" href="#">Техника</a></li>
                 <li><a class="footer-yellow-link" href="#">Инструмент</a></li>
                 <li><a class="footer-yellow-link" href="#">Спецпредложения</a></li>
               </div>
             </ul>
-          </section>
+          </div>  
         </div>
         
-        <section class="deep-footer deep-footer-grid">
+        <section class="deep-footer">
           <div class="deep-footer-container">
             <div class="rights">
               <p class="rights-text">© 2010–2019 Компания «Техномарт» 
@@ -332,7 +324,7 @@
             </div>
 
             <div class="footer-social">
-              <ul class="footer-social-grid">
+              <ul class="social-container">
                 <li>
                   <div class="vk-icon">
                     <a class="social-button" href="https://vk.com"><img class="vk-link" src="img/vk.svg" alt="Вконтакте"></a>
@@ -351,20 +343,23 @@
               </ul>
             </div>
 
-            <div class="footer-feedback">
-              <p>
-                Обратная связь:<br>
-                <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </p>
-            </div>
+            <div class="feedback-container">
+              <div class="footer-feedback">
+                <p>
+                  Обратная связь:<br>
+                  <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                </p>
+              </div>
 
-            <div class="footer-copyright">
-              <p>Разработано:<br>
-                <a href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a>
-              </p>
+              <div class="footer-copyright">
+                <p>Разработано:<br>
+                  <a href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a>
+                </p>
+              </div>
             </div>
-          </section>
-        </div>
+            
+        </section>
+        
       </footer>
 
     <!--Здесь будет форма логина и карты
