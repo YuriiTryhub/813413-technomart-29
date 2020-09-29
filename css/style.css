@@ -177,10 +177,12 @@ h1{
    background-color: var(--basic-gray-lighter);
    width: 940px;
    margin: 0 auto;
+   margin-top: 20px;
 }
 
 .site-navigation{
    display: flex;
+   margin: 0;
 }
 
 .site-navigation li{
@@ -241,11 +243,34 @@ h1{
 /*main*/
 
 /* Каталог основные стили карточек */
+.catalog{
+   width: 940px;
+   margin: 0 auto;
+   padding-top: 59px;
+}
+
+.catalog-list{
+   display: grid;
+   grid-template-columns: repeat(3,300px);
+   grid-template-rows: repeat(3,123px);
+   gap: 20px;
+   padding: 0;
+   margin: 0;
+}
+
+.icon-6 {
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 2;
+   grid-row-end: 4;
+}
+
 .catalog-item {
    width: 300px;
    height: 123px;
    background-color: var(--basic-gray-extra-light);
-   border: 7px solid var(--basic-white);
+   margin: 0;
+   padding: 0;
 }
 
 .catalog-item h3{
