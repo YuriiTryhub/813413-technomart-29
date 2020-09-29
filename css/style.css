@@ -68,8 +68,6 @@ h1{
 .menu-container{
    display: grid;
    grid-template-columns: 220px auto;
-   width: 940px;
-   margin: 0 auto;
 }
 
 
@@ -90,8 +88,6 @@ h1{
 .header-info-container{
    display: grid;
    grid-template-columns: repeat(3,auto);
-   width: 940px;
-   margin: 0 auto;
    padding-top: 46px;
 }
 
@@ -175,8 +171,6 @@ h1{
 
 .main-header-submenu {
    background-color: var(--basic-gray-lighter);
-   width: 940px;
-   margin: 0 auto;
    margin-top: 20px;
 }
 
@@ -244,8 +238,6 @@ h1{
 
 /* Каталог основные стили карточек */
 .catalog{
-   width: 940px;
-   margin: 0 auto;
    padding-top: 59px;
 }
 
@@ -404,9 +396,7 @@ h1{
 .manufacturers-header{
    display: flex;
    align-items: center;
-   max-width: 940px;
    background-color: var(--basic-peach);
-   margin: 0 auto;
    padding: 29px 0 30px;
 }
 
@@ -449,11 +439,6 @@ h1{
    gap: 20px;
    padding: 20px 0 70px 0;
    margin:0;
-}
-
-.products-cards{
-   margin: 0 auto;
-   max-width: 940px;
 }
 
 .products-cards .products-type{
@@ -505,8 +490,6 @@ h1{
 .services-container{
    display: grid;
    grid-template-columns: 240px 70%;
-   max-width: 940px;
-   margin: 0 auto;
    padding: 0 0 99px 0;
 }
 
@@ -559,8 +542,6 @@ h1{
    grid-template-columns: repeat(4,220px);
    gap: 20px;
    padding: 0;
-   max-width: 940px;
-   margin: 0 auto;
 }
 
 /* Карточки производителей */
@@ -650,8 +631,6 @@ h1{
 .contacts-container{
    display: grid;
    grid-template-columns: 60% 40%;
-   width: 940px;
-   margin: 0 auto;
    padding: 70px 0;
 }
 
@@ -660,8 +639,6 @@ h1{
 .first-footer{
    display: grid;
    grid-template-columns: 40% 60%;
-   max-width: 940px;
-   margin: 0 auto;
    padding: 0 0 64px 0;
 }
 
@@ -791,8 +768,6 @@ h1{
 .deep-footer-container{
    display: grid;
    grid-template-columns: repeat(3,auto);
-   width: 940px;
-   margin:0 auto;
 }
 
 .social-container,
@@ -806,6 +781,11 @@ h1{
 
 .footer-copyright{
    padding-left: 51px;
+}
+
+.container{
+   max-width: 940px;
+   margin: 0 auto;
 }
 
 /* Замена цвета иконок*/
