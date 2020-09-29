@@ -418,10 +418,6 @@ h1{
    padding: 11px 24px 9px;
 }
 
-.products-header{
-   margin-top: 59px;
-}
-
 .products-header h2,
 .manufacturers-header h2,
 .services h2,
@@ -786,6 +782,15 @@ h1{
 .container{
    max-width: 940px;
    margin: 0 auto;
+}
+
+.products-header{
+   margin-top: 59px;
+}
+
+.header-logo-icon:hover{
+   opacity: 0.24;
+
 }
 
 /* Замена цвета иконок*/
