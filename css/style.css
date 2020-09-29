@@ -63,14 +63,47 @@ h1{
    font-weight: 23px;
 }
 
+/* grid */
+
+.menu-container{
+   display: grid;
+   grid-template-columns: 220px auto;
+   width: 940px;
+   margin: 0 auto;
+}
+
+
 /* Main navigation */
 
 .main-header-menu {
    background: var(--basic-gray);
+   height: 42px;
 }
 
+.search-form {
+   width: 271px;
+   min-height: 42px;
+}
 
 /*Header*/
+
+.header-info-container{
+   display: grid;
+   grid-template-columns: repeat(3,auto);
+   width: 940px;
+   margin: 0 auto;
+   padding-top: 46px;
+}
+
+.header-info-container h1,
+.header-info-container h2{
+   margin: 0;
+   font-weight: 400;
+}
+
+.main-header-info {
+   min-height: 320px;
+}
 
 .main-header-info,
 .services {
@@ -81,13 +114,18 @@ h1{
    opacity: 0.24;
 }
 
+.phone-call{
+   margin: 0 auto;
+}
+
 .phone-call p{
    color: var(--basic-gray-lighter);
    font-size: 14px;
    line-height: 24px;
+   text-align: center;
 }
 
-.phone-call-border{
+.phone-call h2{
    border: 3px solid var(--basic-white);
    width: 270px;
    text-decoration: none;
@@ -110,6 +148,12 @@ h1{
    
 }
 
+.user-menu-list{
+   display: flex;
+   margin: 0;
+   float: right;
+}
+
 .user-menu-list a:hover{
    color: var(--basic-red);
 }
@@ -118,43 +162,54 @@ h1{
    color: var(--basic-white-active);
 }
 
-.login-link{
-   background: url(../img/icon-logout.svg) no-repeat;
-   padding-left: 26px;
-}
-
 .user-menu-list li{
    background-color: var(--basic-white);
    padding: 10px;
    text-decoration: none;
-   border: 1px solid var(--basic-black);           /* Для видимости */
-   width: 121px;
    text-align: center;
+}
+
+.user-menu-list li:first-child{
+   margin-right: 10px;
 }
 
 .main-header-submenu {
    background-color: var(--basic-gray-lighter);
+   width: 940px;
+   margin: 0 auto;
+}
+
+.site-navigation{
+   display: flex;
+}
+
+.site-navigation li{
+   padding: 16px 27px;
 }
 
 /* Главные кнопки навигации Header */
 
+.main-header-list {
+   display: flex;
+   margin:0;
+   padding: 0;
+   height: 42px;
+}
 
 .main-header-list a{
    color: var(--basic-white);
+   font-size: 18px;
+   font-weight: 400;
 }
 
-.main-header-list li:first-child:active{
-   background-color: var(--basic-black-active);
-}
 
 .main-header-list li:nth-child(2),
 .main-header-list li:nth-child(3),
 .main-header-list li:last-child{
    width: 150px;
    color: white;
-   padding: 10px;
+   padding: 10px 0;
    text-decoration: none;
-   text-transform: uppercase;
    text-align: center;
 }
 
@@ -174,13 +229,14 @@ h1{
    font-weight: normal;
 }
 
-.site-navigation a:hover{
+.site-navigation li:hover{
    background-color: var(--basic-gray-darker);
 }
 
 .site-navigation a:active{
    color: var(--basic-white-opacity);
 }
+
 
 /*main*/
 
