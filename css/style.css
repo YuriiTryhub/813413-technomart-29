@@ -39,8 +39,6 @@ body {
    font-size: 14px;
    line-height: 24px;
    font-weight: 700;
-   color: var(--basic-black);
-   background-color: var(--basic-white);
    background-repeat: no-repeat;
 }
 
@@ -59,74 +57,28 @@ img {
 
 h1{
    color: var(--basic-red);
-   font-size: 15px;
+   font-size: 16px;
    font-style: italic;
    line-height: 25px;
    font-weight: 23px;
 }
 
-.page{
-   height: 100%;
-}
-
-.page-body{
-   min-height: 100%;
-   display: grid;
-   grid-template-rows: min-content 1fr min-content;
-   align-content: start;
-}
-
 /* Main navigation */
 
-.main-header-list a:hover,
-.main-header-list a:visited,
-.main-header-list a:focus,
-.main-header-logo a:hover,
-.main-header-logo a:focus,
-.main-header-logo a:visited {
-   color: var(--basic-white);
+.main-header-menu {
+   background: var(--basic-gray);
 }
-
-
-
-/* Grid */
-
-
-/* header */
-
-
-/* main */
-
-
-
-
-/* */
-
 
 
 /*Header*/
 
-.main-header-menu {
-   background: var(--basic-gray-darker);
-}
-
 .main-header-info,
 .services {
    background-color: var(--basic-extra-light);
-   height: 278px;
 }
 
 .main-logo:hover{
    opacity: 0.24;
-}
-
-.search-form {
-   width: 271px;
-   height: 42px;
-}
-
-.phone-call {
-   margin: 0 69px 0 93px;
 }
 
 .phone-call p{
@@ -175,67 +127,45 @@ h1{
    background-color: var(--basic-white);
    padding: 10px;
    text-decoration: none;
+   border: 1px solid var(--basic-black);           /* Для видимости */
    width: 121px;
    text-align: center;
 }
 
 .main-header-submenu {
    background-color: var(--basic-gray-lighter);
-   /*   ширина блока кнопки!  */
-   width: 940px;
-   margin-left: 148px;
 }
 
-/* Главные кнопки Header */
+/* Главные кнопки навигации Header */
 
 
-.main-header-list li:nth-child(2){
-   background-color: var(--basic-red);
+.main-header-list a{
+   color: var(--basic-white);
 }
 
 .main-header-list li:first-child:active{
    background-color: var(--basic-black-active);
 }
 
-.main-header-list li:last-child,
 .main-header-list li:nth-child(2),
 .main-header-list li:nth-child(3),
-.site-navigation li{
-   font-size: 18px;
-   font-weight: 400;
+.main-header-list li:last-child{
    width: 150px;
-   color: var(--basic-white);
-   padding: 6px 0 6px 0;
+   color: white;
+   padding: 10px;
    text-decoration: none;
+   text-transform: uppercase;
    text-align: center;
 }
 
-
-.main-header-list li:nth-child(2):hover{
-   color: var(--basic-red-hover);
-}
-
-.main-header-list li:nth-child(2):active{
-   background-color: var(--basic-red-click);
-}
-
-.main-header-list li:last-child{
-   background-color: var(--basic-green);
-}
-
-
-.main-header-list li:last-child:hover{
-   background-color: var(--basic-green-active);
-}
-
-.main-header-list a:last-child:active{
-   color: var(--basic-white-opacity);
+.main-header-list li:nth-child(2):active,
+.main-header-list li:nth-child(3):active,
+.main-header-list li:last-child:active {
+   background-color: var(--basic-gray-darker);
 }
 
 
 /* Стилизация кнопок субменю-навигации header */
-
-
 
 .site-navigation a{
    color: var(--basic-white);
@@ -255,14 +185,11 @@ h1{
 /*main*/
 
 /* Каталог основные стили карточек */
-.catalog {
-   margin-left: 110px;
-}
-
 .catalog-item {
    width: 300px;
    height: 123px;
    background-color: var(--basic-gray-extra-light);
+   border: 7px solid var(--basic-white);
 }
 
 .catalog-item h3{
@@ -396,22 +323,6 @@ h1{
    background-color: var(--basic-peach);
 }
 
-.products-header{
-   width: 940px;
-   height: 89px;
-   margin-left: 149px;
-}
-
-.products-header-button {
-   position: relative;
-   top: 25%;
-   transform: translate(105%, 0);
-}
-
-.products-header h2 {
-   padding-left: 28px;
-}
-
 .products-header h2,
 .manufacturers-header h2,
 .services h2,
@@ -491,6 +402,7 @@ h1{
    height: 145px;
    text-align: center;
 }
+
 
 .services p,
 .contacts-info p,
