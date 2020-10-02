@@ -219,6 +219,10 @@ h1{
    background-color: var(--basic-gray-darker);
 }
 
+.main-header-list li:last-child {
+   background-color: var(--basic-green);
+}
+
 
 /* Стилизация кнопок субменю-навигации header */
 
