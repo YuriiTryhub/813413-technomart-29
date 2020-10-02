@@ -126,6 +126,7 @@ h1{
    width: 270px;
    text-decoration: none;
    text-align: center;
+   padding: 5px 0;
 }
 
 .phone-call-info {
@@ -152,6 +153,76 @@ h1{
    display: flex;
    margin: 0;
    padding: 0;
+}
+
+
+.login-form-name{
+   padding: 0;
+   margin: 0;
+}
+
+.top-login a{
+   color: var(--basic-black);
+   font-size: 21px;
+   line-height: 21px;
+   font-weight: normal;
+   text-align: center;
+}
+
+.top-login{
+   display: flex;
+   justify-content: flex-end;
+}
+
+.top-login li{
+   background-color: var(--basic-white);
+   margin:0;
+   padding: 12px 57px 12px 56px;
+   width: 186px;
+}
+
+.login-form-name p{
+   margin:0;
+   padding:0;
+}
+
+.bottom-login{
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   justify-content: flex-end;
+   margin-right: 33px;
+   margin-top: 7px;
+}
+
+.bottom-login a{
+   color: var(--basic-black);
+   font-size: 16px;
+   line-height: 18px;
+   font-weight: normal;
+   text-align: center;
+   color: var(--basic-gray-lighter);
+}
+
+.bottom-login li:first-child{
+   margin-right: 28px;
+}
+
+.bottom-login li:last-child{
+   margin-right: 17px;
+}
+
+.bottom-login li:first-child::after{
+   content: "";
+   width: 4px;
+   height: 5px;
+   background-color: var(--basic-gray-lighter);
+   background-position: 0 0;
+   position: absolute;
+   top: 9px;
+   right: 130px;
+   border-radius: 4px;
+
 }
 
 .user-menu-list a:hover{
@@ -183,9 +254,7 @@ h1{
    margin: 0;
 }
 
-.site-navigation li{
-   padding: 16px 27px;
-}
+
 
 /* Главные кнопки навигации Header */
 
@@ -227,10 +296,12 @@ h1{
 /* Стилизация кнопок субменю-навигации header */
 
 .site-navigation a{
+   display:block;
    color: var(--basic-white);
    font-size: 18px;
    line-height: 24px;
    font-weight: normal;
+   padding: 16px 27px;
 }
 
 .site-navigation li:hover{
