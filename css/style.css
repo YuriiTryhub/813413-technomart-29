@@ -1008,7 +1008,7 @@ h1{
    color: var(--basic-black);
 }
 
-.pages-list a:first-child{
+.page-buttom-red{
    background-color: var(--basic-red);
 }
 
