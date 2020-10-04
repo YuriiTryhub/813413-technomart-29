@@ -256,12 +256,15 @@ h1{
 
 .main-header-submenu {
    background-color: var(--basic-gray-lighter);
-   margin-top: 20px;
 }
 
 .site-navigation{
    display: flex;
    margin: 0;
+}
+
+.main-navigation {
+   margin-top: 17px;
 }
 
 .header-bookmark::before{
@@ -273,7 +276,7 @@ h1{
    background-position: 0 0;
    position: absolute;
    top: 13px;
-   left: 22px;
+   left: 20px;
    opacity: 0.3;
 }
 
