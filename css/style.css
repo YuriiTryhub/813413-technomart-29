@@ -700,8 +700,18 @@ h1{
    display: flex;
    align-items: center;
    background-color: var(--basic-peach);
-   padding: 25px 14px 25px 30px;
+   padding: 25px 13px 25px 29px;
 }
+
+.inner-container h2{
+   font-weight: 400;
+}
+
+.bottom-products-container{
+   padding: 23px 4px 25px 29px;
+}
+
+
 
 .perforators-container{
    background-color: var(--basic-better-light);
@@ -721,6 +731,10 @@ h1{
 .manufacturers-button{
    margin-left: auto;
    padding: 11px 24px 9px;
+}
+
+.manufacturers-button {
+   padding: 11px 38px 8px 39px;
 }
 
 .products-header h2,
