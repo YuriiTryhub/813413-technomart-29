@@ -480,10 +480,6 @@ h1{
 
 /* Флажок нового товара */
 
-.products-type {
-   position: relative;
-   
-}
 
 .materials-icon::before{
    background-image: url("../img/materials.svg") no-repeat 5px;
@@ -774,11 +770,11 @@ h1{
    text-align: center;
 }
 
-.button-red-buy {
+.products-price {
    background: var(--basic-red);
-   height: 38px;
-   width: 141px;
    border: 0;
+   padding: 10px 44px 10px 32px;
+   display: inline-block;
 }
 
 .products-type a,
@@ -797,17 +793,29 @@ h1{
    color: var(--basic-white);
 }
 
-.products-type s{
+.products-type p{
    color: var(--basic-gray-extra-light);
+   text-decoration: line-through;
 }
 
 .products-type h3{
    font-size: 18px;
    line-height: 20px;
-   width: 185px;
-   height: 43px;
-   margin: auto;
+   font-weight: 700;
+   margin: 0 auto;
    color: var(--basic-black);
+}
+
+.products-type-second{
+   margin: 29px 54px 23px 39px;
+}
+
+.products-type-third{
+   margin: 22px 43px 14px 33px;
+}
+
+.products-type-fourth{
+   margin: 29px 54px 71px 38px;
 }
 
 .services-container{
