@@ -32,6 +32,7 @@
    --basic-white-active: #C5C5C5;
    --basic-black: #000000;
    --basic-black-active: #161D29;
+   --basic-black-opacity: rgb(0,0,0,0.5);
 }
 
 /* Global */
@@ -931,6 +932,11 @@ h1{
    position: relative;
 }
 
+.manufacturers-item:hover{
+   border: 1px solid #EAEAEA;
+   box-shadow: 0 0 10px var(--basic-black-opacity);
+}
+
 .manufacturers-item img{
    margin: auto;
    position: absolute;
@@ -965,10 +971,12 @@ h1{
 
 .button.services-button:hover{
    background-color: var(--basic-gray-darker);
+   color: var(--basic-white);
 }
 
 .button.services-button:active{
    background-color: var(--basic-white);
+   border:0;
 }
 
 
