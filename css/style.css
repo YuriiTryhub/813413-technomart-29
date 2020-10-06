@@ -696,7 +696,11 @@ h1{
    display: flex;
    align-items: center;
    background-color: var(--basic-peach);
-   padding: 25px 13px 25px 29px;
+   padding: 25px 15px 25px 29px;
+}
+
+.manufacturers-header-container{
+   padding: 25px 19px 25px 29px;
 }
 
 .inner-container h2{
@@ -898,6 +902,16 @@ h1{
    width: 220px;
    height: 145px;
    text-align: center;
+   position: relative;
+}
+
+.manufacturers-item img{
+   margin: auto;
+   position: absolute;
+   top: 0; 
+   left: 0; 
+   bottom: 0; 
+   right: 0;
 }
 
 
