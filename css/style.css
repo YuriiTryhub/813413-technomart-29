@@ -116,6 +116,10 @@ h1{
    background-color: var(--basic-extra-light);
 }
 
+.services{
+   position: relative;
+}
+
 .main-logo:hover{
    opacity: 0.24;
 }
@@ -841,7 +845,8 @@ h1{
 .services-container{
    display: grid;
    grid-template-columns: 240px 70%;
-   padding: 0 0 99px 0;
+   padding: 0px 0 101px 0;
+   
 }
 
 .services-logo h2,
@@ -851,7 +856,7 @@ h1{
 }
 
 .services-logo{
-   padding-top: 64px 0 0 0;
+   padding: 64px 0 0 0;
 }
 
 .services-logo p{
@@ -861,16 +866,33 @@ h1{
 .services-list{
    grid-column-start: 1;
    grid-column-end: 2;
+   position: relative;
+}
+
+.services-list::after{
+   content: "";
+   position: absolute;
+   width: 10px;
+   height: 279px;
+   top: 20px;
+   left: 231px;
+   background-image: url(../img/line.png);
+   background-position: 0 0px;
+   background-repeat: no-repeat;
 }
 
 .services-list,
 .services-advantages{
    margin:0;
-   padding:0 0 0 70px;
+}
+
+.advantages-item{
+   position: relative;
 }
 
 .advantages-item h3{
-   margin: 0;
+   color: var(--basic-gray-lighter);
+   margin:-4px 0 0px 37px
 }
 
 .services-list,
@@ -879,14 +901,18 @@ h1{
 }
 
 
-/* изображение грузовика*/
-/*
-.services-advantages::after{
+
+.advantages-item::after{
    content: url("../img/truck.png");
-   display: flex;
-   float: right;
+   position: absolute;
+   width: 261px;
+   height: 468px;
+   top: 40%;
+   left: 31%;
+   background-position: 0 0px;
+   background-repeat: no-repeat;
 }
-*/
+
 
 .manufacturers-list {
    display: grid;
@@ -932,6 +958,9 @@ h1{
    font-size: 21px;
    font-weight: bold;
    line-height: 30px;
+   border: 0;
+   text-align: left;
+   padding-left: 23px;
 }
 
 .button.services-button:hover{
@@ -954,8 +983,8 @@ h1{
    background-color: var(--basic-gray-lighter);
 }
 
-.advantages-item h3{
-   color: var(--basic-gray-lighter);
+.advantages-item p{
+   margin: 31px 0 0 39px;
 }
 
 .contacts-company li{
