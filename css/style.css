@@ -4,6 +4,7 @@
    --basic-red-hover: #CA2C37;
    --basic-red-click: #BA2732;
    --basic-gray:#32425C;
+   --basic-gray-dark: #161D29;
    --basic-gray-darker: #293449;
    --basic-gray-lighter: #32425C;
    --basic-gray-medium: #405069;
@@ -80,13 +81,45 @@ h1{
 /* Main navigation */
 
 .main-header-menu {
-   background: var(--basic-gray);
+   background: var(--basic-gray-darker);
    height: 42px;
 }
 
 .search-form {
    width: 271px;
    min-height: 42px;
+   background-color: var(--basic-gray-darker);
+   border:0;
+}
+
+.search-form:focus{
+   background-color: var(--basic-white);
+}
+
+.search-form:active{
+   color: var(--basic-white);
+}
+
+.search input[type=search]{
+   font-size: 18px;
+   line-height: 24px;
+   color: var(--basic-white);
+   font-weight: 400;
+   padding: 9px 0 6px 42px;
+}
+
+.search input[type=search]:focus{
+   color: var(--basic-black);
+}
+
+.icon-search{
+   background-image: url(../img/glass.svg);
+   background-repeat: no-repeat;
+   background-position: 19px 11px;
+}
+
+.icon-search:focus{
+   color: var(--basic-red-hover);
 }
 
 /*Header*/
@@ -286,6 +319,14 @@ h1{
    opacity: 0.3;
 }
 
+.header-bookmark:hover::before{
+   opacity: 1;
+}
+
+.header-bookmark:active::before{
+   opacity: 0.5;
+}
+
 .header-basket::before{
    content: "";
    width: 15px;
@@ -297,6 +338,14 @@ h1{
    top: 13px;
    left: 24px;
    opacity: 0.3;
+}
+
+.header-basket:hover::before{
+   opacity: 1;
+}
+
+.header-basket:active::before{
+   opacity: 0.5;
 }
 
 
@@ -313,6 +362,11 @@ h1{
    color: var(--basic-white);
    font-size: 18px;
    font-weight: 400;
+   padding: 10px 23px 10px 42px;
+}
+
+.main-header-list .header-buy{
+   padding: 10px 17px 10px 17px;
 }
 
 
@@ -327,17 +381,22 @@ h1{
    position: relative;
 }
 
-.main-header-list li:nth-child(2):active,
-.main-header-list li:nth-child(3):active,
-.main-header-list li:last-child:active {
-   background-color: var(--basic-gray-darker);
+.header-bookmark:active,
+.header-basket:active{
+   background-color: var(--basic-gray-dark);
 }
 
 .main-header-list li:last-child {
    background-color: var(--basic-green);
 }
 
+.main-header-list li:last-child:hover{
+   background-color: var(--basic-green-active);
+}
 
+.header-buy:active{
+   color: var(--basic-white-opacity-half);
+}
 /* Стилизация кнопок субменю-навигации header */
 
 .site-navigation a{
@@ -1198,6 +1257,10 @@ h1{
 
 .header-logo-icon:hover{
    opacity: 0.24;
+}
+
+.header-logo-icon img{
+   box-shadow: 0px 4px 0px 0px #b52933;
 }
 
 .footer-white-link,
