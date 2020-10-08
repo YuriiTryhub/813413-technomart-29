@@ -607,7 +607,7 @@ h1{
 }
 
 .catalog-item:nth-child(4){
-   background-color: var(--basic-green);
+   background-color: var(--basic-lightgreen);
 }
 
 .catalog-item:nth-child(5) {
@@ -644,7 +644,6 @@ h1{
    text-decoration: none;
    text-transform: uppercase;
    font-weight: 400;
-   opacity: 0.85;
 }
 
 .button-yellow,
@@ -652,7 +651,8 @@ h1{
 .button-pink,
 .button-green,
 .button-orange{
-   background-color: var(--basic-white-opacity-half);
+   background-color: var(--basic-white-opacity);
+   
 }
 
 .button-yellow:hover,
