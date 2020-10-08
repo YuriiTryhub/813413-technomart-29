@@ -567,6 +567,58 @@ h1{
    grid-row-end: 4;
 }
 
+.slider-style {
+   position: relative;
+}
+
+.slider-style h3{
+   margin: 0;
+   padding: 23px 0px 0 24px;
+}
+
+.slider-style p{
+   margin: 0;
+   padding: 6px 0 0 24px;
+}
+
+.button-red-slider{
+   display: block;
+   background-color: var(--basic-red);
+   border: 0;
+   width: 192px;
+   text-align: center;
+   padding: 10px 0;
+   margin: 115px 0px 0 25px;
+}
+
+.button-red-slider:hover{
+   background-color: var(--basic-red-hover);
+}
+
+.arrow-right::after{
+   content: "";
+   width: 22px;
+   height: 40px;
+   background-image: url(../img/shaperight.svg);
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   position: absolute;
+   top: 46%;
+   left: 93%;
+}
+
+.arrow-left::before{
+   content: "";
+   width: 22px;
+   height: 40px;
+   background-image: url(../img/shapeleft.svg);
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   position: absolute;
+   top: 46%;
+   left: 4%;
+}
+
 .catalog-item {
    width: 300px;
    height: 123px;
@@ -899,10 +951,26 @@ h1{
    position: relative;
 }
 
+.products-container{
+   position: relative;
+}
+
+.products-container::after{
+   content: "";
+   width: 70px;
+   height: 70px;
+   background-image: url(../img/new.svg);
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   position: absolute;
+   top: 0;
+   left: 68%;
+}
+
 .products-price {
    background: var(--basic-red);
    border: 0;
-   margin: -5px 0px 0px 35px;
+   margin: 17px 0px 0px 36px;
    padding: 10px 67px 10px 33px;
    display: inline-block;
    background-image: linear-gradient(225deg, white 25%, transparent 25%),
@@ -932,14 +1000,22 @@ h1{
 .products-type p{
    color: var(--basic-gray-extra-light);
    text-decoration: line-through;
+   font-family: "PT Sans";
+   font-size: 17px;
+   font-weight: 700;
+   line-height: 18px;
+   margin: 0;
 }
 
-.products-type-container h3{
+.products-type-container span{
+   display: inline-block;
+   font-family: "PT Sans";
    font-size: 18px;
    line-height: 20px;
-   font-weight: 700;
+   font-weight: 600;
    margin: 0 auto;
    color: var(--basic-black);
+   padding: 8px 3px 0px 0px;
 }
 
 .products-type-first{
@@ -959,7 +1035,7 @@ h1{
 }
 
 .fourth-item-price{
-   margin-top: 48px;
+   margin-top: 35px;
 }
 
 .services-container{
