@@ -848,6 +848,10 @@ h1{
    padding: 11px 38px 8px 39px;
 }
 
+.contacts-address{
+   margin-left: 74px;
+}
+
 .products-header h2,
 .manufacturers-header h2,
 .services h2,
@@ -857,6 +861,10 @@ h1{
    font-size: 30px;
    line-height: 30px;
    text-transform: uppercase;
+}
+
+.contacts-address h2{
+   margin: 0;
 }
 
 .contacts-info h2{
@@ -1069,6 +1077,15 @@ h1{
    width: 394px;
 }
 
+.contacts-address p{
+   margin: 0;
+   padding: 24px 0 34px 0;
+}
+
+.contacts-address img{
+   padding: 0 0 16px 2px;
+}
+
 .services-button {
    width: 240px;
    height: 61px;
@@ -1108,23 +1125,51 @@ h1{
 }
 
 .contacts-company{
+   margin: 0 0 0 0;
+}
+
+.contacts-company p{
+   color: var(--basic-black);
+   font-family: "Cuprum";
+   font-size: 18px;
+   line-height: 24px;
+   font-weight: 400;
    margin: 0;
 }
 
-.contacts-company li{
-   color: var(--basic-black);
-   font-size: 18px;
-   line-height: 24px;
+.contacts-first-list{
+   margin-top: 5px;
+}
+
+.contacts-second-list{
+   margin-top: 12px;
+}
+
+.contacts-third-list{
+   margin-top: 10px;
 }
 
 .button-info {
    width: 220px;
    height: 38px;
+   margin-top: 22px;
+}
+
+.contacts-company li{
+   position: relative;
 }
 
 /*Выстроить тире по центру (???)*/
-.contacts-company li{
-   list-style-image: url(../img/liststyle.png);
+.contacts-company li::before{
+   background-image: url(../img/liststyle.png);
+   width: 25px;
+   height: 2px;
+   content: "";
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   position: absolute;
+   top: 50%;
+   right: 103%;
 }
 
 .contacts-info-description{
@@ -1138,9 +1183,14 @@ h1{
    width: 460px;
 }
 
+.bottom-description{
+   padding-top: 29px;
+}
+
 .contacts-button {
    width: 300px;
    height: 38px;
+   margin-left: 2px;;
 }
 
 .contacts-container{
@@ -1192,7 +1242,7 @@ h1{
 }
 
 .address-block {
-   width: 321px;
+   width: 322px;
    height: 49px;
 }
 
