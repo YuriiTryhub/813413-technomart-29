@@ -1204,7 +1204,7 @@ h1{
 .first-footer{
    display: grid;
    grid-template-columns: 40% 60%;
-   padding: 0 0 64px 0;
+   padding: 0 0 51px 0;
 }
 
 .footer-navigation{
@@ -1277,6 +1277,7 @@ h1{
 
 .deep-footer {
    background-color: var(--basic-gray-darker);
+   padding-bottom: 20px;
 }
 
 .rights-text,
@@ -1290,6 +1291,19 @@ h1{
    font-size: 16px;
    line-height: 18px;
    color: var(--basic-white);
+}
+
+.rights-text{
+   margin: 0;
+   padding-top: 37px;
+}
+
+.footer-social{
+   padding: 20px 0 0 80px;
+}
+
+.feedback-container{
+   padding: 21px 20px 0 0;
 }
 
 .footer-feedback a,
@@ -1322,7 +1336,7 @@ h1{
 
 .deep-footer-container{
    display: grid;
-   grid-template-columns: repeat(3,auto);
+   grid-template-columns: 270px 310px 360px;
 }
 
 .social-container,
