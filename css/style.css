@@ -1082,7 +1082,7 @@ h1{
    margin:0;
 }
 
-.advantages-item{
+.services-container{
    position: relative;
 }
 
@@ -1098,13 +1098,14 @@ h1{
 
 
 
-.advantages-item::after{
-   content: url("../img/truck.png");
+.services-container::after{
+   content: "";
+   background-image: url("../img/truck.png");
    position: absolute;
-   width: 261px;
-   height: 468px;
-   top: 40%;
-   left: 31%;
+   width: 468px;
+   height: 261px;
+   top: 49%;
+   left: 50%;
    background-position: 0 0px;
    background-repeat: no-repeat;
 }
