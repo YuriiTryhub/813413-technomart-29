@@ -354,10 +354,10 @@ h1{
    left: 5%;
 }
 
-.login-window:hover::after{
+/* .login-window:hover::after{
    color: inherit;
    background: var(--basic-gray-profile);
-}
+} */
 
 .user-menu-list a:hover{
    color: var(--basic-red);
@@ -515,6 +515,7 @@ h1{
 .breadcrumbs-container{
    width: 940px;
    margin: 0 auto;
+   margin-bottom: -4px;
 }
 
 .breadcrumbs {
@@ -613,6 +614,11 @@ h1{
    max-height: 38px;
    padding: 0;
    margin: 0;
+   font-size: 13px;
+   line-height: 18px;
+   font-weight: 400;
+   text-transform: uppercase;
+   font-family: "PT Sans";
 } 
 
 
@@ -623,11 +629,18 @@ h1{
    padding:0;
 }
 
+.filter-right-container a{
+   color: var(--basic-black);
+   opacity: 0.3;
+}
+
 .filter-left p{
    padding: 10px 151px 10px 18px;
    font-size: 13px;
    line-height: 18px;
    font-weight: 400;
+   text-transform: uppercase;
+   font-family: "PT Sans";
 }
 
 
@@ -638,7 +651,13 @@ h1{
 .filter-right-container {
    display: flex;
    flex-wrap: wrap;
-   padding: 7px 105px 6px 20px;
+   padding: 10px 8px 6px 25px;
+   
+}
+
+.filter-right-container .right-inner-price{
+   color: var(--basic-red);
+   opacity: 1;
 }
 
 .filter-right-container li:nth-child(2){
@@ -647,8 +666,38 @@ h1{
 
 .filter-right-container li:nth-child(3){
    margin-right: 65px;
+   border-bottom: 1px dotted var(--basic-red);
 }
 
+.filter-right-container li:nth-child(4){
+   border-bottom: 1px dotted var(--basic-red);
+}
+
+.filter-right-container a:hover{
+   color: var(--basic-black);
+   opacity: 1;
+   border-bottom: 1px solid var(--basic-red);
+}
+
+.filter-right-container li:nth-child(5){
+   background-image: url(../img/icon-up-dir.svg);
+   background-repeat: no-repeat;
+   display: block;
+   width: 11px;
+   height: 11px;
+   margin: 4px 0 0 45px;
+   padding: 0;
+}
+
+.filter-right-container li:last-child{
+   background-image: url(../img/icon-down-dir.svg);
+   background-repeat: no-repeat;
+   display: block;
+   width: 11px;
+   height: 11px;
+   margin: 4px 2px 0 23px;
+   padding: 0;
+}
 
 
 .catalog{
@@ -1000,7 +1049,7 @@ h1{
    display: flex;
    align-items: center;
    background-color: var(--basic-peach);
-   padding: 25px 15px 25px 29px;
+   padding: 30px 15px 30px 29px;
 }
 
 .manufacturers-header-container{
@@ -1471,7 +1520,7 @@ h1{
 }
 
 .address-block {
-   width: 322px;
+   min-width: 322px;
    height: 49px;
 }
 
