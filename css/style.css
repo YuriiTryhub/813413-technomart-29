@@ -4,6 +4,7 @@
    --basic-red-hover: #CA2C37;
    --basic-red-click: #BA2732;
    --basic-gray:#32425C;
+   --basic-gray-profile: #3D546F;
    --basic-gray-dark: #161D29;
    --basic-gray-darker: #293449;
    --basic-gray-lighter: #32425C;
@@ -295,7 +296,6 @@ h1{
    top: 9px;
    right: 130px;
    border-radius: 4px;
-
 }
 
 .login-link,
@@ -322,6 +322,41 @@ h1{
 
 .registration-link{
    padding: 10px 20px;
+}
+
+.inner-links{
+   position: relative;
+}
+
+.login-window::after{
+   content: "";
+   display: block;
+   position: absolute;
+   width: 20px;
+   height: 17px;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-image: url("../img/icon-login.svg");  
+   top: 32%;
+   left: 88%;
+}
+
+.login-window::before{
+   content: "";
+   display: block;
+   position: absolute;
+   width: 20px;
+   height: 17px;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-image: url("../img/icon-user.svg");  
+   top: 32%;
+   left: 5%;
+}
+
+.login-window:hover::after{
+   color: inherit;
+   background: var(--basic-gray-profile);
 }
 
 .user-menu-list a:hover{
@@ -485,8 +520,74 @@ h1{
 .breadcrumbs {
    display: flex;
    flex-wrap: wrap;
-   margin: 21px 0 20px 0;
+   margin: 18px 0 20px 0;
+   padding: 0;
 }
+
+.breadcrumbs a{
+   text-transform: uppercase;
+   font-family: "PT Sans";
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 18px;
+}
+
+.home-link,
+.catalog-link,
+.instrument-link,
+.perforators-link{
+   position: relative;
+   color: var(--basic-black);
+}
+
+.home-link{
+   margin-right: 42px;
+}
+
+.home-link::after{
+   content: "";
+   position: absolute;
+   background-image: url(../img/icon-right-small.svg);
+   width: 8px;
+   height: 12px;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   top: 12%;
+   left: 193%;
+}
+
+.catalog-link{
+   margin-right: 42px;
+}
+
+.catalog-link::after{
+   content: "";
+   position: absolute;
+   background-image: url(../img/icon-right-small.svg);
+   width: 8px;
+   height: 12px;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   top: 12%;
+   left: 132%;
+}
+
+.instrument-link{
+   margin-right: 42px;
+}
+
+.instrument-link::after{
+   content: "";
+   position: absolute;
+   background-image: url(../img/icon-right-small.svg);
+   width: 8px;
+   height: 12px;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   top: 12%;
+   left: 119%;
+}
+
 
 .filter-top{
    display: flex;
