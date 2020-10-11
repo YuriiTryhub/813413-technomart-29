@@ -12,6 +12,8 @@
    --basic-gray-extra-light: #A9A9A9;
    --basic-gray-hover: rgb(197,197,197,0.3);
    --basic-gray-active: rgb(169,169,169,0.3);
+   --basic-gray-box: #cfcfcf;
+   --basic-gray-color: #ababab; 
    --basic-gray-border: #EAEAEA;
    --basic-gray-border-pages: #E5E5E5;
    --basic-peach: #F7F3EC;
@@ -22,6 +24,7 @@
    --basic-green: #63A63E;
    --basic-green-active: #5FBB2D;
    --basic-lightgreen: #8ED78F;
+   --basic-green-price: #00ca74;
    --basic-orange: #FFBF47;
    --basic-light-orange: #FFC047;
    --basic-yellow: #FFD180;
@@ -699,6 +702,99 @@ h1{
    padding: 0;
 }
 
+.filter-price{
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+.range-filter{
+   width: 220px;
+   margin-top: 0px;
+}
+
+/*  Фильтр с диапазоном цен  */
+
+.filter-price h3{
+   font-size: 18px;
+   line-height: 24px;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.range-controls{
+   position: relative;
+   height: 41px;
+   margin-bottom: 15px;
+   padding-top: 39px;
+   padding-left: 20px;
+   padding-right: 20px;
+   background-color: var(--basic-extra-peach);
+   border-radius: 5px;
+}
+
+.range-controls .scale{
+   height: 2px;
+   background-color: var(--basic-gray-extra-light);
+}
+
+.range-controls .bar{
+   width: 70%;
+   height: 2px;
+   background: var(--basic-green-price);
+}
+
+.range-controls .toggle{
+   position: absolute;
+   top: 31px;
+   left: 0;
+   width: 4px;
+   height: 4px;
+   padding: 0;
+   border: 8px solid var(--basic-white);
+   background-color: var(--basic-gray-color);
+   border-radius: 50%;
+   box-shadow: 0 2px 1px 0 var(--basic-gray-box);
+   cursor: pointer;
+}
+
+.range-controls .toggle-min {
+   left: 18px;
+}
+
+.range-controls .toggle-max {
+   left: 160px;
+}
+
+.price-controls label{
+   text-transform: uppercase;
+   font-family: "PT Sans";
+   font-size: 16px;
+}
+
+.price-controls input{
+   font-family: inherit;
+   font-size: inherit;
+}
+
+.price-controls input{
+   width: 60px;
+   padding: 10px;
+   text-align: center;
+   color: var(--basic-black);
+   border: none;
+   border-radius: 5px;
+   background: var(--basic-extra-peach);
+   font-family: inherit;
+   font-size: inherit;
+}
+
+.price-controls span{
+   margin: 0 21px;
+}
+
+
+/* ---  */
 
 .catalog{
    padding-top: 59px;

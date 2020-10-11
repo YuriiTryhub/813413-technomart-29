@@ -116,9 +116,32 @@
       <section class="main-catalog-container"> 
          
          <div class="filters-bottom">
+
             <div class="filter-price">
                <h3>Цена</h3>
-            </div>        
+               <div class="range-filter">
+                  <div class="range-controls">
+                     <div class="scale">
+                        <div class="bar"></div>
+                     </div>
+                     <div class="toggle toggle-min"></div>
+                     <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                     <label class="min-price">
+                        <input type="number" name="min-price" value="0">
+                     </label>
+                     <span>—</span>
+                     <label class="max-price">
+                        <input type="number" name="max-price" value="30000">
+                     </label>
+                  </div>
+               </div>
+
+            </div> 
+            
+            
+
             <div class="filter-manufacturers">
                <form class="filter" method="get" action="#">
                      <legend>Производители:</legend>
