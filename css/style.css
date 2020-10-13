@@ -713,6 +713,24 @@ h1{
    margin-top: 0px;
 }
 
+.filter{
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 19px;
+   text-transform: uppercase;
+}
+
+.filter legend{
+   font-weight: 700;
+   font-size: 17px;
+}
+
+.filters-bottom{
+   margin-top: 17px;
+}
+
 /*  Фильтр с диапазоном цен  */
 
 .filter-price h3{
@@ -720,15 +738,18 @@ h1{
    line-height: 24px;
    text-transform: uppercase;
    font-weight: 700;
+   margin: 0;
+   font-family: "PT Sans";
 }
 
 .range-controls{
    position: relative;
-   height: 41px;
-   margin-bottom: 15px;
-   padding-top: 39px;
+   height: 40px;
+   margin-bottom: 9px;
+   margin-top: 15px;
+   padding-top: 38px;
    padding-left: 20px;
-   padding-right: 20px;
+   padding-right: 19px;
    background-color: var(--basic-extra-peach);
    border-radius: 5px;
 }
@@ -739,14 +760,14 @@ h1{
 }
 
 .range-controls .bar{
-   width: 70%;
+   width: 80%;
    height: 2px;
    background: var(--basic-green-price);
 }
 
 .range-controls .toggle{
    position: absolute;
-   top: 31px;
+   top: 29px;
    left: 0;
    width: 4px;
    height: 4px;
@@ -778,7 +799,7 @@ h1{
 }
 
 .price-controls input{
-   width: 60px;
+   width: 74px;
    padding: 10px;
    text-align: center;
    color: var(--basic-black);
@@ -790,10 +811,53 @@ h1{
 }
 
 .price-controls span{
-   margin: 0 21px;
+   margin: 0 7px;
 }
 
 
+/* ---  */
+
+/* Костомные чекбоксы  */
+
+.filter-input{
+   position: absolute;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+.check-box{
+   position: absolute;
+   width: 26px;
+   height: 26px;
+   background-image: url("../img/checkbox-off.svg");
+   background-repeat: no-repeat;
+   margin-left: -36px;
+}
+
+.check{
+   padding-left: 36px;
+}
+
+.filter-checkbox{
+   padding: 20px 0 0 0;
+}
+
+.checkbox-list{
+   padding: 0;
+}
+
+.filter-input:checked + .check-box{
+   background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-input:focus + .check-box{
+   background-image: url("../img/checkbox-focus-off.svg");
+}
+
+.filter-input:checked:focus + .check-box{
+   background-image: url("../img/checkbox-focus-on.svg");
+}
 /* ---  */
 
 .catalog{
