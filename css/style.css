@@ -814,6 +814,21 @@ h1{
    margin: 0 7px;
 }
 
+.filter-price{
+   position: relative;
+}
+
+.filter-price::after{
+   position: absolute;
+   content: "";
+   width: 220px;
+   height: 1px;
+   top: 116%;
+   left: 0;
+   background-position: 0 0;
+   background-repeat: no-repeat;
+   background-image: url("../img/line-horizontal.png");
+}
 
 /* ---  */
 
@@ -858,8 +873,66 @@ h1{
 .filter-input:checked:focus + .check-box{
    background-image: url("../img/checkbox-focus-on.svg");
 }
+
+.filter-manufacturers{
+   margin-top: 47px;
+}
+
+.checkbox-list{
+   margin: 0;
+}
 /* ---  */
 
+/* Кастомыный радиобаттон */
+
+.radio-container{
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 19px;
+   text-transform: uppercase;
+}
+
+.radio-input{
+   position: absolute;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   
+}
+
+.radio-box{
+   position: absolute;
+   width: 26px;
+   height: 26px;
+   background-image: url("../img/radio-off.svg");
+   background-repeat: no-repeat;
+   margin-left: -40px;
+}
+
+
+
+.radio-container{
+   margin-top: 25px;
+}
+
+.radio-container legend{
+   font-size: 18px;
+   line-height: 24px;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin: 0;
+   font-family: "PT Sans";
+   
+}
+
+.radio-input:checked + .radio-box{
+   background-image: url("../img/radio-on.svg");
+}
+
+
+/* ---  */
 .catalog{
    padding-top: 59px;
 }

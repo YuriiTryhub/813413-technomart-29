@@ -180,16 +180,20 @@
                </form>
             </div>
 
-            <div>
+            <div class="radio-container">
                <legend>Питание:</legend>
                <ul>
-                  <li class="filter-option filter-radio">
-                     <input class="visually-hidden filter-input-radio filter-input" type="radio" name="supply-group" value="battery" id="filter-battery" checked>
-                     <label for="filter-shave">Аккумуляторные</label>
+                  <li class="filter-radio">
+                     <label class="radio-check" for="filter-care">
+                     <input class="radio-input" type="radio" name="supply-group" value="battery" id="filter-care" checked>
+                     <span class="radio-box"></span>
+                     Аккумуляторные</label>
                   </li>
-                  <li class="filter-option filter-radio">
-                     <input class="visually-hidden filter-input-radio filter-input" type="radio" name="supply-group" value="net" id="filter-net">
-                     <label for="filter-care">Сетевые</label>
+                  <li class="filter-radio">
+                     <label class="radio-check" for="filter-care">
+                     <input class="radio-input" type="radio" name="supply-group" value="net" id="filter-care">
+                     <span class="radio-box"></span>
+                     Сетевые</label>
                   </li>
                </ul>
             </div>
