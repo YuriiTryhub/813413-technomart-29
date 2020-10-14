@@ -1614,7 +1614,6 @@ h1{
 
 .advantages-1{
    position: relative;
-   z-index: 2;
 }
 
 .advantages-1::after{
@@ -1627,7 +1626,6 @@ h1{
    left: 31%;
    background-position: 0 0px;
    background-repeat: no-repeat;
-   z-index: 1;
 }
 
 .manufacturers-list {
