@@ -654,7 +654,7 @@ h1{
 .filter-right-container {
    display: flex;
    flex-wrap: wrap;
-   padding: 10px 8px 6px 25px;
+   padding: 10px 13px 6px 20px;
    
 }
 
@@ -676,12 +676,6 @@ h1{
    border-bottom: 1px dotted var(--basic-red);
 }
 
-.filter-right-container a:hover{
-   color: var(--basic-black);
-   opacity: 1;
-   border-bottom: 1px solid var(--basic-red);
-}
-
 .filter-right-container li:nth-child(5){
    background-image: url(../img/icon-up-dir.svg);
    background-repeat: no-repeat;
@@ -700,6 +694,22 @@ h1{
    height: 11px;
    margin: 4px 2px 0 23px;
    padding: 0;
+}
+
+.filter-right-container li:nth-child(5):hover{
+   background-image: url("../img/focus-up.svg");
+}
+
+.filter-right-container li:last-child:hover{
+   background-image: url("../img/focus-down.svg");
+}
+
+.filter-right-container li:nth-child(5):active{
+   background-image: url("../img/icon-up-dir.svg");
+}
+
+.filter-right-container li:last-child:active{
+   background-image: url("../img/down-active-dir.svg");
 }
 
 .filter-price{
