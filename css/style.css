@@ -16,6 +16,7 @@
    --basic-gray-color: #ababab; 
    --basic-gray-border: #EAEAEA;
    --basic-gray-border-pages: #E5E5E5;
+   --basic-gray-border-pagesalt: #C5C5C5;
    --basic-peach: #F7F3EC;
    --basic-extra-peach: #F7F3EC;
    --basic-light: #F9F5F0;
@@ -1972,7 +1973,8 @@ h1{
 .pages{
    width: 460px;
    margin: 0 auto;
-   margin-bottom: 59px;
+   margin-top: -25px;
+   margin-bottom: 57px;
 }
 
 .pages-list {
@@ -1983,35 +1985,82 @@ h1{
 }
 
 
-
-.pages-list a{
+.list-page-buttom{
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: normal;
    font-size: 13px;
-   font-weight: 400;
    line-height: 18px;
+   align-items: center;
+   text-align: center;
    display: block;
-   padding: 10px 15px;
+   text-transform: uppercase;
+   padding: 9px 16px;
    border: 1px solid var(--basic-gray-border-pages);
-   margin-right: 10px;
+   border-radius: 2px;
+   margin-right: 6px;
    color: var(--basic-black);
 }
 
 .page-buttom-red{
    background-color: var(--basic-red);
+   color: var(--basic-white);
 }
 
-.services-wrapper h2,
-.services-wrapper p{
+.last-page-buttom{
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 18px;
+   align-items: center;
+   text-align: center;
+   display: block;
+   text-transform: uppercase;
+   padding: 9px 32px;
+   color: var(--basic-black);
+   border: 1px solid var(--basic-gray-border-pages);
+   border-radius: 2px;
+   margin-left: 2px;
+}
+
+.list-page-buttom:hover,
+.last-page-buttom:hover{
+   border-color: var(--basic-gray-border-pagesalt);
+}
+
+.list-page-buttom:active,
+.last-page-buttom:active{
+   border-color: var(--basic-red);
+}
+
+.services-wrapper h2{
    padding: 0;
    margin: 0;
 }
+
+.services-wrapper p{
+   padding: 13px 0 0 0;
+}
+
+.services-wrapper h2{
+   font-family: "Cuprum";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 30px;
+   line-height: 30px;
+   padding: 0;
+   margin: 0;
+   }
 
 .services-wrapper p{
    width: 907px;
 }
 
 .services-wrapper {
-   padding: 64px 130px 68px 130px;
+   padding: 67px 0px 54px 0px;
 }
+
 
 
 
