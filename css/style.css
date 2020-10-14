@@ -855,7 +855,7 @@ h1{
 }
 
 .filter-checkbox{
-   padding: 20px 0 0 0;
+   padding: 21px 0 0 0;
 }
 
 .checkbox-list{
@@ -876,10 +876,23 @@ h1{
 
 .filter-manufacturers{
    margin-top: 47px;
+   position: relative;
 }
 
 .checkbox-list{
    margin: 0;
+}
+
+.filter-manufacturers::after{
+   position: absolute;
+   content: "";
+   width: 220px;
+   height: 1px;
+   top: 113%;
+   left: 0;
+   background-position: 0 0;
+   background-repeat: no-repeat;
+   background-image: url(../img/line-horizontal.png);
 }
 /* ---  */
 
@@ -892,6 +905,17 @@ h1{
    font-size: 15px;
    line-height: 19px;
    text-transform: uppercase;
+   margin-top: 48px;
+   position: relative;
+}
+
+.radio-container legend{
+   font-size: 17px;
+   line-height: 24px;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin: 0;
+   
 }
 
 .radio-input{
@@ -908,31 +932,64 @@ h1{
    height: 26px;
    background-image: url("../img/radio-off.svg");
    background-repeat: no-repeat;
-   margin-left: -40px;
+   margin-left: -36px;
 }
 
-
-
-.radio-container{
-   margin-top: 25px;
+.radio-check{
+   padding-left: 36px;
 }
 
-.radio-container legend{
-   font-size: 18px;
-   line-height: 24px;
-   text-transform: uppercase;
-   font-weight: 700;
-   margin: 0;
-   font-family: "PT Sans";
-   
+.filter-radio{
+   margin-top: 20px;
+}
+
+.filter-radio{
+   margin-top: 20px;
+}
+
+.radio-second{
+   margin-top: 23px;
 }
 
 .radio-input:checked + .radio-box{
    background-image: url("../img/radio-on.svg");
 }
 
+.radio-input:focus + .radio-box{
+   background-image: url("../img/radio-focus-off.svg");
+}
+
+.radio-input:checked:focus + .radio-box{
+   background-image: url("../img/radio-focus-on.svg");
+}
+
+.radio-inner-container {
+   margin-top: 26px;
+   padding: 0;
+}
 
 /* ---  */
+
+/* Кнопка фильтра "Показать" */
+
+.show-bottom{
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 18px;
+   align-items: center;
+   text-align: center;
+   text-transform: uppercase;
+   color: var(--basic-black);
+   display: inline-block;
+   padding: 10px 79px;
+   margin-top: 22px;
+   border: 1px solid var(--basic-gray-border-pages);
+}
+
+/* ---  */
+
 .catalog{
    padding-top: 59px;
 }
@@ -1358,8 +1415,8 @@ h1{
 .products-catalog-list{
    display: grid;
    grid-template-columns: repeat(3,220px);
-   gap: 20px;
-   padding: 20px 0 70px 0;
+   gap: 17px 20px;
+   padding: 27px 0 70px 0;
    margin:0;
 }
 
