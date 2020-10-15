@@ -2140,8 +2140,12 @@ h1{
    overflow: hidden;
 }
 
-.social-button:hover{
+.social-button:hover path:first-child{
    fill: var(--basic-red);
+}
+
+.social-button:hover path:last-child{
+   fill: var(--basic-white);
 }
 
 /* Замена цвета иконок*/
