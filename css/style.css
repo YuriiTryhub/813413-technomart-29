@@ -1542,6 +1542,10 @@ h1{
    margin: 29px 54px 23px 39px;
 }
 
+.products-type .products-type-second:hover{
+   opacity: 1;
+}
+
 .products-type-third{
    margin: 22px 43px 14px 33px;
 }
