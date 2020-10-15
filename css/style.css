@@ -1864,16 +1864,16 @@ h1{
    color: var(--basic-yellow);
 }
 
-.footer-white-link li:first-child:hover,
-.footer-white-link li:nth-child(2):hover,
-.footer-white-link li:nth-child(3):hover,
-.footer-white-link li:nth-child(4):hover,
-.footer-white-link li:last-child:hover,
-.footer-yellow-link li:first-child:hover,
-.footer-yellow-link li:nth-child(2):hover,
-.footer-yellow-link li:nth-child(3):hover,
-.footer-yellow-link li:nth-child(4):hover,
-.footer-yellow-link li:last-child:hover {
+.footer-white li:first-child:hover,
+.footer-white li:nth-child(2):hover,
+.footer-white li:nth-child(3):hover,
+.footer-white li:nth-child(4):hover,
+.footer-white li:last-child:hover,
+.footer-yellow li:first-child:hover,
+.footer-yellow li:nth-child(2):hover,
+.footer-yellow li:nth-child(3):hover,
+.footer-yellow li:nth-child(4):hover,
+.footer-yellow li:last-child:hover {
    text-decoration: underline;
 }
 
@@ -1986,17 +1986,17 @@ h1{
    background-color: var(--basic-red-click);
 }
 
-.footer-white-link,
-.footer-yellow-link {
+.footer-white,
+.footer-yellow {
    display: flex;
    justify-content: flex-end;
 }
 
-.footer-white-link li{
+.footer-white li{
    margin-left: 58px;
 }
 
-.footer-yellow-link li{
+.footer-yellow li{
    margin-left: 58px;;
 }
 
