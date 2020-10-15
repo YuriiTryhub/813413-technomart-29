@@ -3,6 +3,7 @@
    --basic-red: #EE3643;
    --basic-red-hover: #CA2C37;
    --basic-red-click: #BA2732;
+   --basic-red-shadow: #b52933;
    --basic-gray:#32425C;
    --basic-gray-profile: #3D546F;
    --basic-gray-dark: #161D29;
@@ -162,8 +163,11 @@ h1{
    position: relative;
 }
 
-.main-logo:hover{
-   opacity: 0.24;
+.main-logo{
+   padding: 20px 40px 12px 42px;
+   display: inline-block;
+   background-color: var(--basic-red);
+   box-shadow: 0px 4px 0px 0px var(--basic-red-shadow);
 }
 
 .phone-call{
@@ -1425,18 +1429,21 @@ h1{
 
 .contacts-address h2{
    margin: 0;
+   padding: 3px 0px 0 0px;
+   font-weight: 400;
 }
 
 .contacts-info h2{
    margin: 0;
-   letter-spacing: -1px;
+   font-weight: 400;
+   padding: 2px 0 1px 0px;
 }
 
 .products-list{
    display: grid;
    grid-template-columns: repeat(4,220px);
    gap: 20px;
-   padding: 20px 0 70px 0;
+   padding: 14px 0 70px 0;
    margin:0;
 }
 
@@ -1557,6 +1564,7 @@ h1{
 .services-logo p{
    margin: 0;
    padding: 0;
+   font-weight: 400;
 }
 
 .services-logo{
@@ -1596,12 +1604,16 @@ h1{
 
 .advantages-item h3{
    color: var(--basic-gray-lighter);
-   margin:-4px 0 0px 37px
+   margin:-4px 0 0px 37px;
+   font-weight: 400;
 }
 
-.services-list,
+.services-list{
+   padding: 66px 0 0 0;
+}
+
 .advantages-item{
-   padding: 70px 0 0 0;
+   padding: 70px 0px 0px 3px;
 }
 
 .services-title{
@@ -1798,7 +1810,7 @@ h1{
 .first-footer{
    display: grid;
    grid-template-columns: 40% 60%;
-   padding: 0 0 51px 0;
+   padding: 0px 0 74px 0;
 }
 
 .footer-navigation{
@@ -1812,6 +1824,7 @@ h1{
 
 .page-footer{
    background-color: var(--basic-gray-lighter);
+   margin-top: -2px;
 }
 
 .footer-logo {
@@ -1825,6 +1838,8 @@ h1{
 
 .footer-address{
    color: var(--basic-white);
+   margin: 0;
+   padding: 26px 0px 0 2px;
 }
 
 .footer-address,
@@ -1952,19 +1967,22 @@ h1{
 }
 
 .products-header{
-   margin-top: 59px;
+   margin-top: 55px;
 }
 
 .perforators-header{
    margin:0 auto;
 }
 
-.header-logo-icon:hover{
-   opacity: 0.24;
+.header-logo-icon .logo-link{
+   padding: 11px 51px 5px 56px;
+   display: block;
+   background-color: var(--basic-red);
+   box-shadow: 0px 4px 0px 0px var(--basic-red-shadow);
 }
 
-.header-logo-icon img{
-   box-shadow: 0px 4px 0px 0px #b52933;
+.header-logo-icon .logo-link:active{
+   background-color: var(--basic-red-click);
 }
 
 .footer-white-link,
@@ -2120,6 +2138,10 @@ h1{
    clip-path: inset(100%);
    clip: rect(0 0 0 0);
    overflow: hidden;
+}
+
+.social-button:hover{
+   fill: var(--basic-red);
 }
 
 /* Замена цвета иконок*/
