@@ -27,6 +27,8 @@
    --basic-green-active: #5FBB2D;
    --basic-lightgreen: #8ED78F;
    --basic-green-price: #00ca74;
+   --basic-green-click: #518534;
+   --basic-green-border: #367315;
    --basic-orange: #FFBF47;
    --basic-light-orange: #FFC047;
    --basic-yellow: #FFD180;
@@ -1471,7 +1473,8 @@ h1{
    position: relative;
 }
 
-.products-container::after{
+.products-container::after,
+.products-wrapper::after{
    content: "";
    width: 70px;
    height: 70px;
@@ -1544,6 +1547,76 @@ h1{
 
 .products-type .products-type-second:hover{
    opacity: 1;
+}
+
+.buy-button a,
+.bookmark-button a{
+   font-family: "Cuprum";
+   font-size: 14px;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+
+.buy-button a{
+   color: var(--basic-white);
+}
+
+.bookmark-button a{
+   color: var(--basic-black);
+}
+
+.wrapper-buttons{
+   margin-top: 40px;
+}
+
+.buy-button{
+   display: block;
+   margin: 0 auto;
+   padding: 10px 44px 10px 49px;
+   background-color: var(--basic-green);
+   position: relative;
+   border: 0;
+   border-radius: 2px;
+   box-shadow: inset 0px -3px 0px var(--basic-green-border);
+}
+
+.buy-button:hover{
+   background-color: var(--basic-green-active);
+}
+
+.buy-button:active{
+   background-color: var(--basic-green-click);
+}
+
+.buy-button::before{
+   content: "";
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   top: 24%;
+   left: 21%;
+   background-repeat: no-repeat;
+   background-position: 0 0;
+   background-image: url("../img/icon-cart.svg");
+   opacity: 0.3;
+}
+
+.bookmark-button{
+   display: block;
+   margin: 0 auto;
+   margin-top: 8px;
+   padding: 10px 31px 6px 31px;
+   border: 3px solid #63A63E;
+   box-sizing: border-box;
+   border-radius: 2px;
+}
+
+.products-wrapper .products-type-container{
+   margin-top: 49px;
+}
+
+.products-wrapper{
+   box-shadow: 0 0 10px var(--basic-black-opacity); 
 }
 
 .products-type-third{
