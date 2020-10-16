@@ -312,6 +312,25 @@ h1{
    border-radius: 4px;
 }
 
+.bottom-login a:hover{
+   color: var(--basic-red);
+}
+
+.bottom-login li:first-child:hover::after{
+   background-color: var(--basic-red);
+}
+
+.bottom-login a:active{
+   color: var(--basic-gray-border-pagesalt);
+}
+
+.bottom-login li:first-child:active::after{
+   background-color: var(--basic-gray-border-pagesalt);
+}
+
+
+
+
 .login-link,
 .registration-link{
    display: block;
