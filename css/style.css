@@ -1788,6 +1788,10 @@ h1{
    box-shadow: 0 0 10px var(--basic-black-opacity);
 }
 
+.manufacturers-item:active{
+   opacity: 0.1;
+}
+
 .manufacturers-item img{
    margin: auto;
    position: absolute;
