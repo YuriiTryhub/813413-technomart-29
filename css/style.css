@@ -340,36 +340,37 @@ h1{
    position: relative;
 }
 
-.login-window::after{
-   content: "";
-   display: block;
-   position: absolute;
-   width: 20px;
-   height: 17px;
-   background-repeat: no-repeat;
-   background-position: 0 0;
-   background-image: url("../img/icon-login.svg");  
+.icon-login-catalog{
+   position: absolute; 
    top: 32%;
    left: 88%;
 }
 
-.login-window::before{
-   content: "";
-   display: block;
+.icon-user-catalog{
    position: absolute;
-   width: 20px;
-   height: 17px;
-   background-repeat: no-repeat;
-   background-position: 0 0;
-   background-image: url("../img/icon-user.svg");  
    top: 32%;
    left: 5%;
 }
 
-/* .login-window:hover::after{
-   color: inherit;
-   background: var(--basic-gray-profile);
-} */
+.icon-login-catalog:hover path{
+   fill: var(--basic-gray-profile);
+}
+
+.icon-user-catalog:hover path{
+   fill: var(--basic-gray-profile);
+}
+
+.icon-login-catalog:active path{
+   fill: var(--basic-gray-border-pagesalt);
+}
+
+.icon-user-catalog:active path{
+   fill: var(--basic-gray-border-pagesalt);
+}
+
+.user-name-catalog p:active{
+   color: var(--basic-gray-border-pagesalt);
+}
 
 .user-menu-list a:hover{
    color: var(--basic-red);
@@ -396,6 +397,7 @@ h1{
 .site-navigation{
    display: flex;
    margin: 0;
+   padding: 0 0 0 26px;
 }
 
 .main-navigation {
@@ -494,6 +496,10 @@ h1{
    color: var(--basic-white-opacity-half);
 }
 /* Стилизация кнопок субменю-навигации header */
+
+.site-navigation li{
+   padding-left: 2px;
+}
 
 .site-navigation a{
    display:block;
@@ -1473,8 +1479,7 @@ h1{
    position: relative;
 }
 
-.products-container::after,
-.products-wrapper::after{
+.products-container::after{
    content: "";
    width: 70px;
    height: 70px;
@@ -1549,24 +1554,26 @@ h1{
    opacity: 1;
 }
 
-.buy-button a,
-.bookmark-button a{
+.wrapper-buttons .buy-button,
+.wrapper-buttons .bookmark-button{
    font-family: "Cuprum";
    font-size: 14px;
    line-height: 18px;
    text-transform: uppercase;
 }
 
-.buy-button a{
+.wrapper-buttons .buy-button{
    color: var(--basic-white);
 }
 
-.bookmark-button a{
+.wrapper-buttons .bookmark-button{
    color: var(--basic-black);
 }
 
 .wrapper-buttons{
    margin-top: 40px;
+   margin-bottom: 40px;
+   display: none;
 }
 
 .buy-button{
@@ -1606,18 +1613,39 @@ h1{
    margin: 0 auto;
    margin-top: 8px;
    padding: 10px 31px 6px 31px;
-   border: 3px solid #63A63E;
+   border: 3px solid var(--basic-green);
    box-sizing: border-box;
    border-radius: 2px;
 }
 
-.products-wrapper .products-type-container{
-   margin-top: 49px;
+.bookmark-button:hover{
+   border: 3px solid var(--basic-gray);
+   color: var(--basic-gray);
+   
 }
 
-.products-wrapper{
+.bookmark-button:active{
+   opacity: 0.5;
+}
+
+/* Изменение состояния при наведении на карточку товара */
+
+.products-type:hover{
    box-shadow: 0 0 10px var(--basic-black-opacity); 
 }
+
+.products-type:hover .wrapper-buttons{
+   display: inline-block;
+}
+
+.products-type:hover .products-type-first,
+.products-type:hover .products-type-second,
+.products-type:hover .products-type-third,
+.products-type:hover .products-type-fourth{
+   display: none;
+}
+
+/* --- */
 
 .products-type-third{
    margin: 22px 43px 14px 33px;
