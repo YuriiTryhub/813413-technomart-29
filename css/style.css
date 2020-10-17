@@ -788,7 +788,7 @@ h1{
    text-transform: uppercase;
 }
 
-.filter legend{
+.filter h3{
    font-weight: 700;
    font-size: 17px;
 }
@@ -975,7 +975,7 @@ h1{
    position: relative;
 }
 
-.radio-container legend{
+.radio-container h3{
    font-size: 17px;
    line-height: 24px;
    text-transform: uppercase;
