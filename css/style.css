@@ -237,6 +237,7 @@ h1{
 
 .user-menu-list{
    display: flex;
+   flex-wrap: wrap;
    margin: 0;
    padding: 0;
    margin-top: 6px;
@@ -258,6 +259,7 @@ h1{
 
 .top-login{
    display: flex;
+   flex-wrap: wrap;
    justify-content: flex-end;
    position: relative;
 }
@@ -415,9 +417,11 @@ h1{
 
 .site-navigation{
    display: flex;
+   flex-wrap: wrap;
    margin: 0;
    padding: 0 0 0 26px;
    box-shadow: inset 0px -5px 0px var(--basic-gray-darker);
+   
 }
 
 .main-navigation {
@@ -1398,6 +1402,7 @@ h1{
 
 .inner-container{
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    background-color: var(--basic-peach);
    padding: 30px 15px 30px 29px;
@@ -2034,15 +2039,15 @@ h1{
 
 .rights-text{
    margin: 0;
-   padding-top: 37px;
+   padding-top: 34px;
 }
 
 .footer-social{
-   padding: 20px 0 0 80px;
+   padding: 18px 0 0 80px;
 }
 
 .feedback-container{
-   padding: 21px 20px 0 0;
+   padding: 17px 14px 0px 60px;
 }
 
 .footer-feedback a,
@@ -2081,6 +2086,7 @@ h1{
 .social-container,
 .feedback-container{
    display: flex;
+   flex-wrap: wrap;
 }
 
 .feedback-container{
@@ -2118,15 +2124,16 @@ h1{
 .footer-white,
 .footer-yellow {
    display: flex;
+   flex-wrap: wrap;
    justify-content: flex-end;
 }
 
-.footer-white li{
-   margin-left: 58px;
+.footer-white li:not(:last-child){
+   margin-right: 59px;
 }
 
-.footer-yellow li{
-   margin-left: 58px;;
+.footer-yellow li:not(:last-child){
+   margin-right: 59px;;
 }
 
 .yellow-container {
