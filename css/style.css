@@ -18,6 +18,7 @@
    --basic-gray-border: #EAEAEA;
    --basic-gray-border-pages: #E5E5E5;
    --basic-gray-border-pagesalt: #C5C5C5;
+   --basic-gray-popup: #f4f4f4;
    --basic-peach: #F7F3EC;
    --basic-extra-peach: #F7F3EC;
    --basic-light: #F9F5F0;
@@ -2306,7 +2307,9 @@ h1{
    border: none;
 }
 
-.visually-hidden{
+.visually-hidden,
+.hide-title,
+.visually-hide{
    position: absolute;
    width: 1px;
    height: 1px;
@@ -2327,4 +2330,121 @@ h1{
    fill: var(--basic-white);
 }
 
-/* Замена цвета иконок*/
+.writeus-modal{
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin: auto;
+   color: var(--basic-black);
+   background-color: var(--basic-white);
+   border-top: 7px solid var(--basic-red);
+   
+}
+
+.modal-view{
+   top: 120px;
+   bottom: auto;
+   width: 620px;
+}
+
+.login-form{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding-top: 20px;
+   position: relative;
+}
+
+.login-form input[type="name"],
+.login-form input[type="email"] {
+   box-sizing: border-box;
+   width: 220px;
+   padding: 5px 10px;
+   margin-top: 10px;
+   font: inherit;
+   color: var(--basic-black);
+   background-color: var(--basic-white);
+   border: 2px solid var(--basic-black);
+}
+
+.login-form input[type="name"]{
+   margin-right: 10px;
+}
+
+.login-form input[type="email"]{
+   margin-left: 10px;
+}
+
+.login-form input[type="text"]{
+   box-sizing: border-box;
+   width: 460px;
+   padding: 4px 0px 83px 10px;
+   margin-top: 10px;
+   font: inherit;
+   color: var(--basic-black);
+} 
+
+.button-send-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 620px;
+   margin: 0 auto;
+   height: 112px;
+   background-color: var(--basic-gray-popup);
+   margin-top: 37px;
+}
+
+.button-send {
+   border: none;
+   width: 460px;
+   padding-top: 11px;
+   padding-bottom: 9px;
+   background-color:var(--basic-red);
+   color: var(--basic-white);
+   text-transform: uppercase;
+}
+
+.writeus-form-titles{
+   font-size: 18px;
+   margin: 0;
+}
+
+.email-title{
+   margin-left: 10px;
+}
+
+.name-title,
+.email-title{
+   margin-top: 20px;
+}
+
+.text-title{
+   margin-top: 15px;
+}
+
+.modal-close{
+   position: absolute;
+   top: 13px;
+   right: 12px;
+   width: 22px;
+   height: 22px;
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
+}
+
+.modal-close::after {
+   content: "";
+   position: absolute;
+   top: 10%;
+   left: 2%;
+   width: 21px;
+   height: 21px;
+   background-color: var(--basic-dark);
+   background-image: url("../img/icon-close.svg");
+   background-position: 0 0;
+   background-repeat: no-repeat;
+}
