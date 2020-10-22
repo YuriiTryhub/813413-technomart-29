@@ -2124,7 +2124,6 @@ h1{
 .social-container,
 .feedback-container{
    display: flex;
-   flex-wrap: wrap;
 }
 
 .feedback-container{
@@ -2167,7 +2166,6 @@ h1{
 .footer-white,
 .footer-yellow {
    display: flex;
-   flex-wrap: wrap;
    justify-content: flex-end;
 }
 
