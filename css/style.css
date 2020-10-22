@@ -1823,8 +1823,9 @@ h1{
    border: 1px solid var(--basic-gray-border);
    width: 220px;
    height: 145px;
-   text-align: center;
-   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .manufacturers-item:hover{
@@ -1834,15 +1835,6 @@ h1{
 
 .manufacturers-item:active{
    opacity: 0.1;
-}
-
-.manufacturers-item img{
-   margin: auto;
-   position: absolute;
-   top: 0; 
-   left: 0; 
-   bottom: 0; 
-   right: 0;
 }
 
 
