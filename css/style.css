@@ -1658,18 +1658,24 @@ h1{
 
 /* Изменение состояния при наведении на карточку товара */
 
-.products-type:hover{
+.products-type:hover,
+.products-type:focus-within{
    box-shadow: 0 0 10px var(--basic-black-opacity); 
 }
 
-.products-type:hover .wrapper-buttons{
+.products-type:hover .wrapper-buttons,
+.products-type:focus-within .wrapper-buttons{
    display: inline-block;
 }
 
 .products-type:hover .products-type-first,
 .products-type:hover .products-type-second,
 .products-type:hover .products-type-third,
-.products-type:hover .products-type-fourth{
+.products-type:hover .products-type-fourth,
+.products-type:focus-within .products-type-first,
+.products-type:focus-within .products-type-second,
+.products-type:focus-within .products-type-third,
+.products-type:focus-within .products-type-fourth{
    display: none;
 }
 
