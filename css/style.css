@@ -268,13 +268,13 @@ h1{
 .top-login li{
    background-color: var(--basic-white);
    margin:0;
-   padding: 12px 57px 12px 56px;
-   width: 186px;
+   padding: 0;
+   max-width: 300px;
 }
 
 .login-form-name p{
    margin:0;
-   padding:0;
+   padding: 12px 59px 10px 52px;
 }
 
 .bottom-login{
@@ -300,7 +300,7 @@ h1{
 }
 
 .bottom-login li:last-child{
-   margin-right: 17px;
+   margin-right: 14px;
 }
 
 .bottom-login li:first-child::after{
@@ -331,7 +331,10 @@ h1{
    background-color: var(--basic-gray-border-pagesalt);
 }
 
-
+.login-list-container{
+   margin: 0;
+   padding: 0;
+}
 
 
 .login-link,
