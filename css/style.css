@@ -919,6 +919,10 @@ h1{
 
 .check{
    padding-left: 36px;
+   text-transform: uppercase;
+   font-weight: 400;
+   line-height: 19px;
+   font-family: "PT Sans";
 }
 
 .filter-checkbox{
