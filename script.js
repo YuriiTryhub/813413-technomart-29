@@ -10,6 +10,11 @@ const advantagesDelivery = document.querySelector('.advantages-delivery');
 const advantagesWarranty = document.querySelector('.advantages-warranty');
 const advantagesCredit = document.querySelector('.advantages-credit');
 
+const applicationButton = document.querySelector('.application-button');
+const writeUsModal = document.querySelector('.writeus-modal');
+const modalCloseButton = document.querySelector('.modal-close');
+const contactsButton = document.querySelector('.contacts-button');
+
 /* Слайдер основных разделов каталога */
 
 buttonNext.addEventListener("click", function (evt) {
@@ -64,5 +69,19 @@ creditButton.addEventListener("click", function (evt) {
    warrantyButton.classList.remove("button-active");
 });
 
+/* Форма обратной связи */
 
+applicationButton.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   writeUsModal.classList.remove("modal-show");
+});
 
+modalCloseButton.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   writeUsModal.classList.add("modal-show");
+});
+
+contactsButton.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   writeUsModal.classList.remove("modal-show");
+});

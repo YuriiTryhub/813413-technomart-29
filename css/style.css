@@ -2329,7 +2329,7 @@ h1{
 /* Форма обратной связи */
 
 .writeus-modal{
-   display: none;
+   display: block;
    position: fixed;
    top: 0;
    right: 0;
@@ -2340,6 +2340,10 @@ h1{
    background-color: var(--basic-white);
    border-top: 7px solid var(--basic-red);
    
+}
+
+.modal-show{
+   display: none;
 }
 
 .modal-view{
