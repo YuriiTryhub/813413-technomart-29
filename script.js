@@ -15,6 +15,10 @@ const writeUsModal = document.querySelector('.writeus-modal');
 const modalCloseButton = document.querySelector('.modal-close');
 const contactsButton = document.querySelector('.contacts-button');
 
+const mapLink = document.querySelector('.map-link');
+const modalMap = document.querySelector('.modal-map');
+const mapClose = document.querySelector('.map-close');
+
 /* Слайдер основных разделов каталога */
 
 buttonNext.addEventListener("click", function (evt) {
@@ -85,3 +89,15 @@ contactsButton.addEventListener("click", function (evt) {
    evt.preventDefault();
    writeUsModal.classList.remove("modal-show");
 });
+
+/* Интерактивная карта */
+
+mapLink.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   modalMap.classList.remove("map-show");
+})
+
+mapClose.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   modalMap.classList.add("map-show");
+})
