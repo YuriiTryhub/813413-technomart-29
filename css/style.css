@@ -110,26 +110,19 @@ h1{
    color: var(--basic-white);
 }
 
-.search input[type=search]{
+.search{
+   position: relative;
+}
+
+.search input[name="search"]{
    font-size: 18px;
-   line-height: 24px;
-   color: var(--basic-white);
-   font-weight: 400;
    padding: 9px 0 6px 42px;
 }
 
-.search input[type=search]:focus{
-   color: var(--basic-black);
-}
-
 .icon-search{
-   background-image: url(../img/glass.svg);
-   background-repeat: no-repeat;
-   background-position: 19px 11px;
-}
-
-.icon-search:focus{
-   color: var(--basic-red-hover);
+   top: 28%;
+   left: 6%;
+   position: absolute;
 }
 
 /*Header*/
