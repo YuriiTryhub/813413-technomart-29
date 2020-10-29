@@ -19,10 +19,13 @@
             <ul class="main-header-list">
               <li>
                 <form class="search">
-                  <input class="search-form" type="search" name="search" placeholder="Поиск:">
-                  <svg class="icon-search" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
-                  </svg>
+                  <label class="visually-hide" for="search-block">Поиск</label>
+                  <input class="search-form" id="search-block" type="search" name="search" placeholder="Поиск:">
+                  <button class="icon-search-button">
+                    <svg class="icon-search" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+                    </svg>
+                  </button>
                 </form>
               </li>
               <li><a class="header-bookmark" href="#">Закладки: 0</a></li>
@@ -449,7 +452,7 @@
         <div class="button-send-container">
           <button class="button-send" type="button">Отправить</button>
         </div> 
-        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+        <button class="modal-close" tabindex="0" type="submit"></button>
       </section>
 
       <section class="modal modal-map map-show">
@@ -458,6 +461,17 @@
         width="766" height="560" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
         <button class="map-close" type="button" aria-label="Закрыть"></button>
       </section> 
+
+      <section class="modal-basket modal-basket-hide">
+        <div class="top-basket-container">
+            <p>Товар добавлен в корзину!</p>
+        </div>
+        <div class="bottom-basket-container">
+            <button class="basket-buy" type="button">Оформить заказ</button>
+            <button class="basket-continue" type="button">Продолжить покупки</button>
+        </div>
+        <button class="basket-popup-close basket-hide-close" type="button"></button>
+      </section>
 
       <script src="script.js"></script>
   </body>

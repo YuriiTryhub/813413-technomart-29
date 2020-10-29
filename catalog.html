@@ -448,7 +448,7 @@
       </section>
    </footer> 
 
-   <section class="modal-basket">
+   <section class="modal-basket modal-basket-hide">
       <div class="top-basket-container">
          <p>Товар добавлен в корзину!</p>
       </div>
@@ -458,5 +458,21 @@
       </div>
       <button class="basket-popup-close basket-hide-close" type="button"></button>
    </section>
+
+   <script>
+      const buyButton = document.querySelector('.buy-button');
+      const closeBasket = document.querySelector('.basket-popup-close');
+      const modalBasket = document.querySelector('.modal-basket');
+
+      buyButton.addEventListener("click", function (evt) {
+         evt.preventDefault();
+         modalBasket.classList.remove("modal-basket-hide");
+      })
+
+      closeBasket.addEventListener("click", function (evt) {
+         evt.preventDefault();
+         modalBasket.classList.add("modal-basket-hide");
+      })
+   </script>
 </body>
 </html>

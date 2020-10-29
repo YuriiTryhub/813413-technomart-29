@@ -19,6 +19,10 @@ const contactsButton = document.querySelector('.contacts-button');
 const mapLink = document.querySelector('.map-link');
 const modalMap = document.querySelector('.modal-map');
 const mapClose = document.querySelector('.map-close');
+/* Окно добавление товара в корзину */
+const buyButton = document.querySelector('.buy-button');
+const closeBasket = document.querySelector('.basket-popup-close');
+const modalBasket = document.querySelector('.modal-basket');
 
 /* Слайдер основных разделов каталога */
 
@@ -101,4 +105,16 @@ mapLink.addEventListener("click", function (evt) {
 mapClose.addEventListener("click", function (evt) {
    evt.preventDefault();
    modalMap.classList.add("map-show");
+})
+
+/* Окно добавление товара в корзину */
+
+buyButton.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   modalBasket.classList.remove("modal-basket-hide");
+})
+
+closeBasket.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   modalBasket.classList.add("modal-basket-hide");
 })

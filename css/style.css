@@ -119,11 +119,20 @@ h1{
    padding: 9px 0 6px 42px;
 }
 
-.icon-search{
+.icon-search-button{
    top: 28%;
-   left: 6%;
+   left: 4%;
    position: absolute;
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
 }
+
+.icon-search-button path:focus{
+   fill:  var(--basic-red);
+}
+
+
 
 /*Header*/
 
@@ -502,6 +511,11 @@ h1{
 
 .header-bookmark:active,
 .header-basket:active{
+   background-color: var(--basic-gray-dark);
+}
+
+.header-bookmark:hover,
+.header-basket:hover{
    background-color: var(--basic-gray-dark);
 }
 
@@ -2449,7 +2463,7 @@ h1{
 /* --- */
 
 .modal-basket{
-   display: none;
+   display: block;
    position: fixed;
    right: 0;
    top: 120px;
@@ -2460,6 +2474,10 @@ h1{
    background-color: var(--basic-white);
    border-top: 7px solid var(--basic-red);
    width: 620px;
+}
+
+.modal-basket-hide{
+   display: none;
 }
 
 .top-basket-container{
