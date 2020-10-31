@@ -3,6 +3,8 @@ const buttonNext = document.querySelector('.button-next');
 const buttonPrev = document.querySelector('.button-prev');
 const slideWrapper1 = document.querySelector('.slide-wrapper-1');
 const slideWrapper2 = document.querySelector('.slide-wrapper-2');
+const firstSlider = document.querySelector('.first-slider');
+const secondSlider = document.querySelector('.second-slider');
 /* Переключение кнопок секции "Сервисы" */
 const deliveryButton = document.querySelector('.delivery-button');
 const warrantyButton = document.querySelector('.warranty-button');
@@ -31,6 +33,10 @@ buttonNext.addEventListener("click", function (evt) {
    slideWrapper2.classList.add("slide-current");
    slideWrapper1.classList.add("slide-show");
    slideWrapper1.classList.remove("slide-current");
+   firstSlider.classList.remove("current-active");
+   firstSlider.classList.add("current-inactive");
+   secondSlider.classList.add("current-active");
+   secondSlider.classList.remove("current-inactive");
 });
 
 buttonPrev.addEventListener("click", function (evt) {
@@ -38,6 +44,10 @@ buttonPrev.addEventListener("click", function (evt) {
    slideWrapper1.classList.add("slide-current");
    slideWrapper2.classList.add("slide-show");
    slideWrapper2.classList.remove("slide-current");
+   firstSlider.classList.add("current-active");
+   firstSlider.classList.remove("current-inactive");
+   secondSlider.classList.remove("current-active");
+   secondSlider.classList.add("current-inactive");
 });
 
 /* Переключение кнопок секции "Сервисы" */

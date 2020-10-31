@@ -1201,11 +1201,11 @@ h1{
    left: 47%;
 }
 
-.slider-control button{
+.slider-control .first-slider,
+.slider-control .second-slider{
    padding: 0;
    width: 10px;
    height: 10px;
-   background-color: var(--basic-white);
    border: 2px solid var(--basic-white);
    border-radius: 50%;
    cursor: pointer;
@@ -1213,13 +1213,19 @@ h1{
    
 }
 
+.current-active{
+   background-color: var(--basic-red);
+}
+
+.current-inactive{
+   background-color: var(--basic-white);
+}
+
 .slide-show{
    display: none;
 }
 
-.current button{
-   background: var(--basic-red);
-}
+
 
 .slide-current{
    display: block;
