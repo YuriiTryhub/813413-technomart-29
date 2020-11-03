@@ -2373,8 +2373,8 @@
    position: relative;
 }
 
-.login-form input[type="name"],
-.login-form input[type="email"] {
+.login-icon-user,
+.login-icon-email {
    box-sizing: border-box;
    width: 220px;
    padding: 5px 10px;
@@ -2385,15 +2385,15 @@
    border: 2px solid var(--basic-black);
 }
 
-.login-form input[type="name"]{
+.login-icon-user{
    margin-right: 10px;
 }
 
-.login-form input[type="email"]{
+.login-icon-email{
    margin-left: 10px;
 }
 
-.login-form input[type="text"]{
+.login-icon-text{
    box-sizing: border-box;
    width: 460px;
    padding: 4px 0px 83px 10px;
@@ -2464,6 +2464,10 @@
    background-image: url("../img/icon-close.svg");
    background-position: 0 0;
    background-repeat: no-repeat;
+}
+
+.login-icon-user{
+
 }
 
 /* --- */
