@@ -1,30 +1,30 @@
 /* Слайдер основных разделов каталога */
 const buttonNext = document.querySelector('.button-next');
-const buttonPrev = document.querySelector('.button-prev');
-const slideWrapper1 = document.querySelector('.slide-wrapper-1');
-const slideWrapper2 = document.querySelector('.slide-wrapper-2');
-const firstSlider = document.querySelector('.first-slider');
-const secondSlider = document.querySelector('.second-slider');
+const buttonPrev = document.querySelector(".button-prev");
+const slideWrapper1 = document.querySelector(".slide-wrapper-1");
+const slideWrapper2 = document.querySelector(".slide-wrapper-2");
+const firstSlider = document.querySelector(".first-slider");
+const secondSlider = document.querySelector(".second-slider");
 /* Переключение кнопок секции "Сервисы" */
-const deliveryButton = document.querySelector('.delivery-button');
-const warrantyButton = document.querySelector('.warranty-button');
-const creditButton = document.querySelector('.credit-button');
-const advantagesDelivery = document.querySelector('.advantages-delivery');
-const advantagesWarranty = document.querySelector('.advantages-warranty');
-const advantagesCredit = document.querySelector('.advantages-credit');
+const deliveryButton = document.querySelector(".delivery-button");
+const warrantyButton = document.querySelector(".warranty-button");
+const creditButton = document.querySelector(".credit-button");
+const advantagesDelivery = document.querySelector(".advantages-delivery");
+const advantagesWarranty = document.querySelector(".advantages-warranty");
+const advantagesCredit = document.querySelector(".advantages-credit");
 /* Форма обратной связи */
-const applicationButton = document.querySelector('.application-button');
-const writeUsModal = document.querySelector('.writeus-modal');
-const modalCloseButton = document.querySelector('.modal-close');
-const contactsButton = document.querySelector('.contacts-button');
+const applicationButton = document.querySelector(".application-button");
+const writeUsModal = document.querySelector(".writeus-modal");
+const modalCloseButton = document.querySelector(".modal-close");
+const contactsButton = document.querySelector(".contacts-button");
 /* Интерактивная карта */
-const mapLink = document.querySelector('.map-link');
-const modalMap = document.querySelector('.modal-map');
-const mapClose = document.querySelector('.map-close');
+const mapLink = document.querySelector(".map-link");
+const modalMap = document.querySelector(".modal-map");
+const mapClose = document.querySelector(".map-close");
 /* Окно добавление товара в корзину */
-const buyButton = document.querySelector('.buy-button');
-const closeBasket = document.querySelector('.basket-popup-close');
-const modalBasket = document.querySelector('.modal-basket');
+const buyButton = document.querySelector(".buy-button");
+const closeBasket = document.querySelector(".basket-popup-close");
+const modalBasket = document.querySelector(".modal-basket");
 
 /* Слайдер основных разделов каталога */
 
