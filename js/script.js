@@ -18,10 +18,6 @@ const writeUsModal = document.querySelector(".writeus-modal");
 const modalCloseButton = document.querySelector(".modal-close");
 const contactsButton = document.querySelector(".contacts-button");
 const loginForm = document.querySelector(".login-form");
-const writeusName = document.querySelector(".writeus-name");
-const writeusEmail = document.querySelector(".writeus-email");
-const writeusText = document.querySelector(".writeus-text");
-const buttonSend = document.querySelector(".button-send");
 /* Интерактивная карта */
 const mapLink = document.querySelector(".map-link");
 const modalMap = document.querySelector(".modal-map");
@@ -111,44 +107,26 @@ contactsButton.addEventListener("click", function (evt) {
    writeUsModal.classList.remove("modal-show");
 });
 
-try {
-   storage = localStorage.getItem("login");
-} catch (err) {
-   isStorageSupport = false;
-}
-
-buttonSend.addEventListener("submit", function (evt) {
-   if (!writeusName.value || !writeusEmail.value) {
-      evt.preventDefault();
-      writeUsModal.classList.add(".modal-error");
-   } else {
-      if (isStorageSupport) {
-         localStorage.setItem("login", writeusName.value);
-      }
-   }
-});
-
-
 /* Интерактивная карта */
 
 mapLink.addEventListener("click", function (evt) {
    evt.preventDefault();
    modalMap.classList.remove("map-show");
-})
+});
 
 mapClose.addEventListener("click", function (evt) {
    evt.preventDefault();
    modalMap.classList.add("map-show");
-})
+});
 
 /* Окно добавление товара в корзину */
 
 buyButton.addEventListener("click", function (evt) {
    evt.preventDefault();
    modalBasket.classList.remove("modal-basket-hide");
-})
+});
 
 closeBasket.addEventListener("click", function (evt) {
    evt.preventDefault();
    modalBasket.classList.add("modal-basket-hide");
-})
+});
