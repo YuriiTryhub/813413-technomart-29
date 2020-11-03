@@ -47,7 +47,7 @@
 }
 
 /* Global */
-body {
+.page-body {
    margin: 0;
    padding: 0;
    font-family: "Cuprum", sans-serif;
@@ -58,20 +58,20 @@ body {
    min-width: 960px;
 }
 
-a {
+.page-link {
    text-decoration: none;
 }
 
-li {
+.page-list {
    list-style: none;
 }
 
-img {
+.page-img {
    max-width: 100%;
 
 }
 
-h1{
+.main-heading{
    color: var(--basic-red);
    font-size: 16px;
    font-style: italic;
