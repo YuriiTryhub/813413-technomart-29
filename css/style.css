@@ -50,7 +50,7 @@
 .page-body {
    margin: 0;
    padding: 0;
-   font-family: "Cuprum", sans-serif;
+   font-family: "Cuprum", "Arial", sans-serif;
    font-size: 14px;
    line-height: 24px;
    font-weight: 700;
@@ -580,7 +580,7 @@
 
 .breadcrumbs a{
    text-transform: uppercase;
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
    font-weight: 400;
    font-size: 13px;
    line-height: 18px;
@@ -671,7 +671,7 @@
    line-height: 18px;
    font-weight: 400;
    text-transform: uppercase;
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
 } 
 
 
@@ -693,7 +693,7 @@
    line-height: 18px;
    font-weight: 400;
    text-transform: uppercase;
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
 }
 
 
@@ -791,7 +791,7 @@
 }
 
 .filter{
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
    font-style: normal;
    font-weight: normal;
    font-size: 15px;
@@ -817,7 +817,7 @@
    text-transform: uppercase;
    font-weight: 700;
    margin: 0;
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .range-controls{
@@ -867,7 +867,7 @@
 
 .price-controls label{
    text-transform: uppercase;
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
    font-size: 16px;
 }
 
@@ -933,7 +933,7 @@
    text-transform: uppercase;
    font-weight: 400;
    line-height: 19px;
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .filter-checkbox{
@@ -981,7 +981,7 @@
 /* Кастомыный радиобаттон */
 
 .radio-container{
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
    font-style: normal;
    font-weight: normal;
    font-size: 15px;
@@ -1055,7 +1055,7 @@
 /* Кнопка фильтра "Показать" */
 
 .show-button{
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
    font-style: normal;
    font-weight: normal;
    font-size: 13px;
@@ -1556,7 +1556,7 @@
 
 .products-type a,
 .products-type s {
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .products-type .products-price,
@@ -1573,7 +1573,7 @@
 .products-type p{
    color: var(--basic-gray-extra-light);
    text-decoration: line-through;
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
    font-size: 17px;
    font-weight: 700;
    line-height: 18px;
@@ -1582,7 +1582,7 @@
 
 .products-type-container span{
    display: inline-block;
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
    font-size: 18px;
    line-height: 20px;
    font-weight: 600;
@@ -1605,7 +1605,7 @@
 
 .wrapper-buttons .buy-button,
 .wrapper-buttons .bookmark-button{
-   font-family: "Cuprum";
+   font-family: "Cuprum", "Arial", sans-serif;
    font-size: 14px;
    line-height: 18px;
    text-transform: uppercase;
@@ -1862,7 +1862,7 @@
 .services p,
 .contacts-info p,
 .contacts-address p{
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
    font-style: normal;
    font-weight: normal;
    font-size: 13px;
@@ -1925,7 +1925,7 @@
 
 .contacts-company p{
    color: var(--basic-black);
-   font-family: "Cuprum";
+   font-family: "Cuprum", "Arial", sans-serif;
    font-size: 18px;
    line-height: 24px;
    font-weight: 400;
@@ -2211,7 +2211,7 @@
 
 
 .list-page-buttom{
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
    font-style: normal;
    font-weight: normal;
    font-size: 13px;
@@ -2233,7 +2233,7 @@
 }
 
 .last-page-buttom{
-   font-family: "PT Sans";
+   font-family: "PT Sans", "Arial", sans-serif;
    font-style: normal;
    font-weight: normal;
    font-size: 13px;
@@ -2269,7 +2269,7 @@
 }
 
 .services-wrapper h2{
-   font-family: "Cuprum";
+   font-family: "Cuprum", "Arial", sans-serif;
    font-style: normal;
    font-weight: normal;
    font-size: 30px;
@@ -2494,7 +2494,7 @@
    text-align: center;
    margin-top: 67px;
    margin-bottom: 66px;
-   font-family: "Cuprum";
+   font-family: "Cuprum", "Arial", sans-serif;
    font-size: 24px;
    padding: 0px 0px 0px 0px;
    font-weight: 700;
