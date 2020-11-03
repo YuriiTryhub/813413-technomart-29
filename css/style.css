@@ -502,7 +502,7 @@
 .main-header-list li:nth-child(3),
 .main-header-list li:last-child{
    width: 150px;
-   color: white;
+   color: var(--basic-white);
    padding: 10px 0;
    text-decoration: none;
    text-align: center;
@@ -1850,7 +1850,7 @@
 }
 
 .manufacturers-item:hover{
-   border: 1px solid #EAEAEA;
+   border: 1px solid var(--basic-gray-border);
    box-shadow: 0 0 10px var(--basic-black-opacity);
 }
 
@@ -2302,7 +2302,7 @@
 .modal-map {
    width: 766px;
    height: 560px;
-   border: 7px solid white;
+   border: 7px solid var(--basic-white);
    display: block;
 }
 
